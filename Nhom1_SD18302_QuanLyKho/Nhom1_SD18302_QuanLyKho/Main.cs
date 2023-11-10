@@ -4,6 +4,7 @@ namespace Nhom1_SD18302_QuanLyKho
 {
     public partial class frmMain : Form
     {
+        frmNhanVien frmNhanVien;
         public frmMain()
         {
             InitializeComponent();
@@ -101,14 +102,32 @@ namespace Nhom1_SD18302_QuanLyKho
             WindowState = FormWindowState.Minimized;
         }
 
-        private void btnMaxSize_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Maximized;
-        }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+
+            if (frmNhanVien == null)
+            {
+                frmNhanVien = new frmNhanVien();
+                frmNhanVien.FormClosed += FrmNhanVien_FormClosed;
+                frmNhanVien.MdiParent = this;
+                frmNhanVien.Dock = DockStyle.Fill;
+                frmNhanVien.Show();
+            }
+            else
+            {
+                frmNhanVien.Activate();
+            }
+        }
+
+        private void FrmNhanVien_FormClosed(object? sender, FormClosedEventArgs e)
+        {
+            frmNhanVien = null;
         }
     }
 }
