@@ -109,6 +109,7 @@
             label4.Size = new Size(22, 23);
             label4.TabIndex = 2;
             label4.Text = "...";
+            label4.Click += label4_Click;
             // 
             // lblNgay
             // 
