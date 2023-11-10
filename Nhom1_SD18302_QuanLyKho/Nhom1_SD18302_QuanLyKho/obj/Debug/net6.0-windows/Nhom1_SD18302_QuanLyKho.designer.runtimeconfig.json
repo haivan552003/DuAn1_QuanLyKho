@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\haiva\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\haiva\\.nuget\\packages"
+      "C:\\Users\\ACER\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ACER\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
