@@ -8,25 +8,27 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\haiva\\.nuget\\packages\\": {}
+    "C:\\Users\\Minh Kha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
+      "projectUniqueName": "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
       "projectName": "Nhom1_SD18302_QuanLyKho",
-      "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
-      "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-      "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\obj\\",
+      "projectPath": "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
+      "packagesPath": "C:\\Users\\Minh Kha\\.nuget\\packages\\",
+      "outputPath": "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Minh Kha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -64,7 +66,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
