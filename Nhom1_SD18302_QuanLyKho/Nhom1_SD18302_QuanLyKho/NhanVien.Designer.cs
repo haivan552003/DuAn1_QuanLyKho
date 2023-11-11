@@ -31,31 +31,31 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhanVien));
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
-            pictureBox2 = new PictureBox();
+            cboSapXep = new ComboBox();
+            txtTimKiem = new TextBox();
+            btnTim = new PictureBox();
             dataGridView1 = new DataGridView();
-            textBox2 = new TextBox();
+            txtMaND = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
             textBox5 = new TextBox();
             textBox6 = new TextBox();
             textBox7 = new TextBox();
             label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            txtTen = new Label();
+            txtTuoi = new Label();
             label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
+            txtEmail = new Label();
+            txtSDT = new Label();
+            txtMatKhau = new Label();
+            ckNam = new RadioButton();
+            ckNu = new RadioButton();
+            btnThem = new Button();
+            btnSua = new Button();
+            btnXoa = new Button();
+            btnLamMoi = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnTim).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -82,31 +82,31 @@
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // cboSapXep
             // 
-            comboBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(12, 85);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(150, 28);
-            comboBox1.TabIndex = 2;
+            cboSapXep.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cboSapXep.FormattingEnabled = true;
+            cboSapXep.Location = new Point(12, 85);
+            cboSapXep.Name = "cboSapXep";
+            cboSapXep.Size = new Size(150, 28);
+            cboSapXep.TabIndex = 2;
             // 
-            // textBox1
+            // txtTimKiem
             // 
-            textBox1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(272, 86);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(310, 27);
-            textBox1.TabIndex = 3;
+            txtTimKiem.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTimKiem.Location = new Point(272, 86);
+            txtTimKiem.Name = "txtTimKiem";
+            txtTimKiem.Size = new Size(310, 27);
+            txtTimKiem.TabIndex = 3;
             // 
-            // pictureBox2
+            // btnTim
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(583, 86);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.TabIndex = 4;
-            pictureBox2.TabStop = false;
+            btnTim.Image = (Image)resources.GetObject("btnTim.Image");
+            btnTim.Location = new Point(583, 86);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(30, 30);
+            btnTim.TabIndex = 4;
+            btnTim.TabStop = false;
             // 
             // dataGridView1
             // 
@@ -119,13 +119,13 @@
             dataGridView1.Size = new Size(796, 245);
             dataGridView1.TabIndex = 5;
             // 
-            // textBox2
+            // txtMaND
             // 
-            textBox2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(109, 393);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(280, 27);
-            textBox2.TabIndex = 3;
+            txtMaND.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtMaND.Location = new Point(109, 393);
+            txtMaND.Name = "txtMaND";
+            txtMaND.Size = new Size(280, 27);
+            txtMaND.TabIndex = 3;
             // 
             // textBox3
             // 
@@ -179,29 +179,29 @@
             label2.Text = "Mã ND:";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label3
+            // txtTen
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(12, 430);
-            label3.Name = "label3";
-            label3.Size = new Size(70, 23);
-            label3.TabIndex = 0;
-            label3.Text = "Tên ND:";
-            label3.TextAlign = ContentAlignment.TopCenter;
+            txtTen.AutoSize = true;
+            txtTen.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTen.ForeColor = Color.White;
+            txtTen.Location = new Point(12, 430);
+            txtTen.Name = "txtTen";
+            txtTen.Size = new Size(70, 23);
+            txtTen.TabIndex = 0;
+            txtTen.Text = "Tên ND:";
+            txtTen.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label4
+            // txtTuoi
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(12, 463);
-            label4.Name = "label4";
-            label4.Size = new Size(46, 23);
-            label4.TabIndex = 0;
-            label4.Text = "Tuổi:";
-            label4.TextAlign = ContentAlignment.TopCenter;
+            txtTuoi.AutoSize = true;
+            txtTuoi.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtTuoi.ForeColor = Color.White;
+            txtTuoi.Location = new Point(12, 463);
+            txtTuoi.Name = "txtTuoi";
+            txtTuoi.Size = new Size(46, 23);
+            txtTuoi.TabIndex = 0;
+            txtTuoi.Text = "Tuổi:";
+            txtTuoi.TextAlign = ContentAlignment.TopCenter;
             // 
             // label5
             // 
@@ -215,125 +215,125 @@
             label5.Text = "Giới tính:";
             label5.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label6
+            // txtEmail
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(441, 393);
-            label6.Name = "label6";
-            label6.Size = new Size(55, 23);
-            label6.TabIndex = 0;
-            label6.Text = "Email:";
-            label6.TextAlign = ContentAlignment.TopCenter;
+            txtEmail.AutoSize = true;
+            txtEmail.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail.ForeColor = Color.White;
+            txtEmail.Location = new Point(441, 393);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(55, 23);
+            txtEmail.TabIndex = 0;
+            txtEmail.Text = "Email:";
+            txtEmail.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label7
+            // txtSDT
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(441, 430);
-            label7.Name = "label7";
-            label7.Size = new Size(44, 23);
-            label7.TabIndex = 0;
-            label7.Text = "SĐT:";
-            label7.TextAlign = ContentAlignment.TopCenter;
+            txtSDT.AutoSize = true;
+            txtSDT.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSDT.ForeColor = Color.White;
+            txtSDT.Location = new Point(441, 430);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(44, 23);
+            txtSDT.TabIndex = 0;
+            txtSDT.Text = "SĐT:";
+            txtSDT.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label8
+            // txtMatKhau
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(441, 463);
-            label8.Name = "label8";
-            label8.Size = new Size(88, 23);
-            label8.TabIndex = 0;
-            label8.Text = "Mật khẩu:";
-            label8.TextAlign = ContentAlignment.TopCenter;
+            txtMatKhau.AutoSize = true;
+            txtMatKhau.Font = new Font("Segoe UI Semibold", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            txtMatKhau.ForeColor = Color.White;
+            txtMatKhau.Location = new Point(441, 463);
+            txtMatKhau.Name = "txtMatKhau";
+            txtMatKhau.Size = new Size(88, 23);
+            txtMatKhau.TabIndex = 0;
+            txtMatKhau.Text = "Mật khẩu:";
+            txtMatKhau.TextAlign = ContentAlignment.TopCenter;
             // 
-            // radioButton1
+            // ckNam
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(109, 497);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(62, 24);
-            radioButton1.TabIndex = 6;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Nam";
-            radioButton1.UseVisualStyleBackColor = true;
+            ckNam.AutoSize = true;
+            ckNam.Location = new Point(109, 497);
+            ckNam.Name = "ckNam";
+            ckNam.Size = new Size(62, 24);
+            ckNam.TabIndex = 6;
+            ckNam.TabStop = true;
+            ckNam.Text = "Nam";
+            ckNam.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // ckNu
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(201, 497);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(50, 24);
-            radioButton2.TabIndex = 6;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Nữ";
-            radioButton2.UseVisualStyleBackColor = true;
+            ckNu.AutoSize = true;
+            ckNu.Location = new Point(201, 497);
+            ckNu.Name = "ckNu";
+            ckNu.Size = new Size(50, 24);
+            ckNu.TabIndex = 6;
+            ckNu.TabStop = true;
+            ckNu.Text = "Nữ";
+            ckNu.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnThem
             // 
-            button1.BackColor = Color.FromArgb(134, 179, 209);
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(12, 543);
-            button1.Name = "button1";
-            button1.Padding = new Padding(5, 0, 5, 0);
-            button1.Size = new Size(100, 45);
-            button1.TabIndex = 7;
-            button1.Text = "Thêm";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            btnThem.BackColor = Color.FromArgb(134, 179, 209);
+            btnThem.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnThem.ForeColor = Color.White;
+            btnThem.Image = (Image)resources.GetObject("btnThem.Image");
+            btnThem.ImageAlign = ContentAlignment.MiddleLeft;
+            btnThem.Location = new Point(12, 543);
+            btnThem.Name = "btnThem";
+            btnThem.Padding = new Padding(5, 0, 5, 0);
+            btnThem.Size = new Size(100, 45);
+            btnThem.TabIndex = 7;
+            btnThem.Text = "Thêm";
+            btnThem.TextAlign = ContentAlignment.MiddleRight;
+            btnThem.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnSua
             // 
-            button2.BackColor = Color.FromArgb(134, 179, 209);
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(118, 543);
-            button2.Name = "button2";
-            button2.Size = new Size(100, 45);
-            button2.TabIndex = 7;
-            button2.Text = "Cập nhập";
-            button2.TextAlign = ContentAlignment.MiddleRight;
-            button2.UseVisualStyleBackColor = false;
+            btnSua.BackColor = Color.FromArgb(134, 179, 209);
+            btnSua.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSua.ForeColor = Color.White;
+            btnSua.Image = (Image)resources.GetObject("btnSua.Image");
+            btnSua.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSua.Location = new Point(118, 543);
+            btnSua.Name = "btnSua";
+            btnSua.Size = new Size(100, 45);
+            btnSua.TabIndex = 7;
+            btnSua.Text = "Cập nhập";
+            btnSua.TextAlign = ContentAlignment.MiddleRight;
+            btnSua.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnXoa
             // 
-            button3.BackColor = Color.FromArgb(132, 77, 54);
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(708, 543);
-            button3.Name = "button3";
-            button3.Padding = new Padding(5, 0, 5, 0);
-            button3.Size = new Size(100, 45);
-            button3.TabIndex = 7;
-            button3.Text = "Xóa";
-            button3.TextAlign = ContentAlignment.MiddleRight;
-            button3.UseVisualStyleBackColor = false;
+            btnXoa.BackColor = Color.FromArgb(132, 77, 54);
+            btnXoa.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnXoa.ForeColor = Color.White;
+            btnXoa.Image = (Image)resources.GetObject("btnXoa.Image");
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(708, 543);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Padding = new Padding(5, 0, 5, 0);
+            btnXoa.Size = new Size(100, 45);
+            btnXoa.TabIndex = 7;
+            btnXoa.Text = "Xóa";
+            btnXoa.TextAlign = ContentAlignment.MiddleRight;
+            btnXoa.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnLamMoi
             // 
-            button4.BackColor = Color.FromArgb(134, 179, 209);
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(602, 543);
-            button4.Name = "button4";
-            button4.Size = new Size(100, 45);
-            button4.TabIndex = 7;
-            button4.Text = "Làm mới";
-            button4.TextAlign = ContentAlignment.MiddleRight;
-            button4.UseVisualStyleBackColor = false;
+            btnLamMoi.BackColor = Color.FromArgb(134, 179, 209);
+            btnLamMoi.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLamMoi.ForeColor = Color.White;
+            btnLamMoi.Image = (Image)resources.GetObject("btnLamMoi.Image");
+            btnLamMoi.ImageAlign = ContentAlignment.MiddleLeft;
+            btnLamMoi.Location = new Point(602, 543);
+            btnLamMoi.Name = "btnLamMoi";
+            btnLamMoi.Size = new Size(100, 45);
+            btnLamMoi.TabIndex = 7;
+            btnLamMoi.Text = "Làm mới";
+            btnLamMoi.TextAlign = ContentAlignment.MiddleRight;
+            btnLamMoi.UseVisualStyleBackColor = false;
             // 
             // frmNhanVien
             // 
@@ -341,29 +341,29 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(170, 160, 160);
             ClientSize = new Size(820, 600);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
+            Controls.Add(btnLamMoi);
+            Controls.Add(btnXoa);
+            Controls.Add(btnSua);
+            Controls.Add(btnThem);
+            Controls.Add(ckNu);
+            Controls.Add(ckNam);
             Controls.Add(dataGridView1);
-            Controls.Add(pictureBox2);
+            Controls.Add(btnTim);
             Controls.Add(textBox7);
             Controls.Add(textBox6);
             Controls.Add(textBox4);
             Controls.Add(textBox5);
             Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox1);
+            Controls.Add(txtMaND);
+            Controls.Add(txtTimKiem);
+            Controls.Add(cboSapXep);
             Controls.Add(pictureBox1);
             Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
+            Controls.Add(txtTuoi);
+            Controls.Add(txtTen);
+            Controls.Add(txtMatKhau);
+            Controls.Add(txtSDT);
+            Controls.Add(txtEmail);
             Controls.Add(label2);
             Controls.Add(label1);
             ForeColor = Color.White;
@@ -374,7 +374,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NhanVien";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnTim).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -384,28 +384,28 @@
 
         private Label label1;
         private PictureBox pictureBox1;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
-        private PictureBox pictureBox2;
+        private ComboBox cboSapXep;
+        private TextBox txtTimKiem;
+        private PictureBox btnTim;
         private DataGridView dataGridView1;
-        private TextBox textBox2;
+        private TextBox txtMaND;
         private TextBox textBox3;
         private TextBox textBox4;
         private TextBox textBox5;
         private TextBox textBox6;
         private TextBox textBox7;
         private Label label2;
-        private Label label3;
-        private Label label4;
+        private Label txtTen;
+        private Label txtTuoi;
         private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Label txtEmail;
+        private Label txtSDT;
+        private Label txtMatKhau;
+        private RadioButton ckNam;
+        private RadioButton ckNu;
+        private Button btnThem;
+        private Button btnSua;
+        private Button btnXoa;
+        private Button btnLamMoi;
     }
 }
