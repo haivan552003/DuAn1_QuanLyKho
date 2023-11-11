@@ -171,6 +171,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
+            linkLabel1.LinkColor = Color.FromArgb(192, 192, 255);
             linkLabel1.Location = new Point(33, 144);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(98, 20);

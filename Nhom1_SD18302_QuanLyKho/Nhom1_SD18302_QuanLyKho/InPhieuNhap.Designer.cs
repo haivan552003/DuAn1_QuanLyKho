@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInPhieuNhap));
             panel1 = new Panel();
             dataGridView1 = new DataGridView();
-            label6 = new Label();
-            label4 = new Label();
+            lblSDT = new Label();
+            lblTen = new Label();
             lblNgay = new Label();
             label7 = new Label();
             label5 = new Label();
@@ -40,7 +40,11 @@
             label2 = new Label();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
+            btnIn = new Button();
+            label8 = new Label();
+            lblTTSo = new Label();
+            label10 = new Label();
+            label11 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -49,9 +53,13 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(lblTTSo);
+            panel1.Controls.Add(label10);
+            panel1.Controls.Add(label11);
             panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(lblSDT);
+            panel1.Controls.Add(lblTen);
             panel1.Controls.Add(lblNgay);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label5);
@@ -59,9 +67,9 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(25, 61);
+            panel1.Location = new Point(12, 61);
             panel1.Name = "panel1";
-            panel1.Size = new Size(400, 500);
+            panel1.Size = new Size(658, 780);
             panel1.TabIndex = 11;
             // 
             // dataGridView1
@@ -71,34 +79,34 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(367, 251);
+            dataGridView1.Size = new Size(624, 444);
             dataGridView1.TabIndex = 3;
             // 
-            // label6
+            // lblSDT
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(128, 102);
-            label6.Name = "label6";
-            label6.Size = new Size(22, 23);
-            label6.TabIndex = 2;
-            label6.Text = "...";
+            lblSDT.AutoSize = true;
+            lblSDT.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblSDT.Location = new Point(130, 102);
+            lblSDT.Name = "lblSDT";
+            lblSDT.Size = new Size(22, 23);
+            lblSDT.TabIndex = 2;
+            lblSDT.Text = "...";
             // 
-            // label4
+            // lblTen
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(133, 78);
-            label4.Name = "label4";
-            label4.Size = new Size(22, 23);
-            label4.TabIndex = 2;
-            label4.Text = "...";
+            lblTen.AutoSize = true;
+            lblTen.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTen.Location = new Point(135, 78);
+            lblTen.Name = "lblTen";
+            lblTen.Size = new Size(22, 23);
+            lblTen.TabIndex = 2;
+            lblTen.Text = "...";
             // 
             // lblNgay
             // 
             lblNgay.AutoSize = true;
             lblNgay.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNgay.Location = new Point(238, 36);
+            lblNgay.Location = new Point(453, 40);
             lblNgay.Name = "lblNgay";
             lblNgay.Size = new Size(22, 23);
             lblNgay.TabIndex = 2;
@@ -108,7 +116,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(244, 382);
+            label7.Location = new Point(453, 641);
             label7.Name = "label7";
             label7.Size = new Size(137, 23);
             label7.TabIndex = 2;
@@ -138,7 +146,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(178, 37);
+            label2.Location = new Point(393, 40);
             label2.Name = "label2";
             label2.Size = new Size(54, 23);
             label2.TabIndex = 2;
@@ -148,11 +156,11 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(218, 13);
+            label1.Location = new Point(445, 13);
             label1.Name = "label1";
-            label1.Size = new Size(147, 20);
+            label1.Size = new Size(149, 20);
             label1.TabIndex = 1;
-            label1.Text = "PHIẾU XUẤT HÀNG";
+            label1.Text = "PHIẾU NHẬP HÀNG";
             // 
             // pictureBox1
             // 
@@ -164,30 +172,70 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnIn
             // 
-            button1.BackColor = Color.FromArgb(134, 179, 209);
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(358, 12);
-            button1.Name = "button1";
-            button1.Padding = new Padding(10, 0, 20, 0);
-            button1.Size = new Size(100, 45);
-            button1.TabIndex = 10;
-            button1.Text = "In";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            btnIn.BackColor = Color.FromArgb(134, 179, 209);
+            btnIn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIn.ForeColor = Color.White;
+            btnIn.Image = (Image)resources.GetObject("btnIn.Image");
+            btnIn.ImageAlign = ContentAlignment.MiddleLeft;
+            btnIn.Location = new Point(570, 12);
+            btnIn.Name = "btnIn";
+            btnIn.Padding = new Padding(10, 0, 20, 0);
+            btnIn.Size = new Size(100, 45);
+            btnIn.TabIndex = 10;
+            btnIn.Text = "In";
+            btnIn.TextAlign = ContentAlignment.MiddleRight;
+            btnIn.UseVisualStyleBackColor = false;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(191, 600);
+            label8.Name = "label8";
+            label8.Size = new Size(454, 23);
+            label8.TabIndex = 4;
+            label8.Text = "...............................................................................................................";
+            // 
+            // lblTTSo
+            // 
+            lblTTSo.AutoSize = true;
+            lblTTSo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTTSo.Location = new Point(181, 576);
+            lblTTSo.Name = "lblTTSo";
+            lblTTSo.Size = new Size(22, 23);
+            lblTTSo.TabIndex = 5;
+            lblTTSo.Text = "...";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(16, 600);
+            label10.Name = "label10";
+            label10.Size = new Size(178, 23);
+            label10.TabIndex = 6;
+            label10.Text = "Thành tiền(bằng chữ):";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(16, 576);
+            label11.Name = "label11";
+            label11.Size = new Size(167, 23);
+            label11.TabIndex = 7;
+            label11.Text = "Thành tiền(bằng số):";
             // 
             // frmInPhieuNhap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(170, 160, 160);
-            ClientSize = new Size(482, 573);
+            ClientSize = new Size(682, 853);
             Controls.Add(panel1);
-            Controls.Add(button1);
+            Controls.Add(btnIn);
             Name = "frmInPhieuNhap";
             Text = "In Phiếu Nhập";
             panel1.ResumeLayout(false);
@@ -201,8 +249,8 @@
 
         private Panel panel1;
         private DataGridView dataGridView1;
-        private Label label6;
-        private Label label4;
+        private Label lblSDT;
+        private Label lblTen;
         private Label lblNgay;
         private Label label7;
         private Label label5;
@@ -210,6 +258,10 @@
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
-        private Button button1;
+        private Button btnIn;
+        private Label label8;
+        private Label lblTTSo;
+        private Label label10;
+        private Label label11;
     }
 }

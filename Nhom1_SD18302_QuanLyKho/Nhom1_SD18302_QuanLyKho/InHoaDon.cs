@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Nhom1_SD18302_QuanLyKho
 {
-    public partial class frmInPhieuNhap : Form
+    public partial class InHoaDon : Form
     {
-        public frmInPhieuNhap()
+        public InHoaDon()
         {
             InitializeComponent();
         }
-
-
     }
 }

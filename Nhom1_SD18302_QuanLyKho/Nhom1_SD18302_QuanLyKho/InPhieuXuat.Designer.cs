@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInPhieuXuat));
-            button1 = new Button();
+            btnIn = new Button();
             panel1 = new Panel();
             dataGridView1 = new DataGridView();
-            label6 = new Label();
-            label4 = new Label();
+            lblChucVu = new Label();
+            lblTen = new Label();
             lblNgay = new Label();
             label7 = new Label();
             label5 = new Label();
@@ -46,28 +46,28 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // btnIn
             // 
-            button1.BackColor = Color.FromArgb(134, 179, 209);
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(570, 12);
-            button1.Name = "button1";
-            button1.Padding = new Padding(10, 0, 20, 0);
-            button1.Size = new Size(100, 45);
-            button1.TabIndex = 8;
-            button1.Text = "In";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            btnIn.BackColor = Color.FromArgb(134, 179, 209);
+            btnIn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnIn.ForeColor = Color.White;
+            btnIn.Image = (Image)resources.GetObject("btnIn.Image");
+            btnIn.ImageAlign = ContentAlignment.MiddleLeft;
+            btnIn.Location = new Point(570, 12);
+            btnIn.Name = "btnIn";
+            btnIn.Padding = new Padding(10, 0, 20, 0);
+            btnIn.Size = new Size(100, 45);
+            btnIn.TabIndex = 8;
+            btnIn.Text = "In";
+            btnIn.TextAlign = ContentAlignment.MiddleRight;
+            btnIn.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(lblChucVu);
+            panel1.Controls.Add(lblTen);
             panel1.Controls.Add(lblNgay);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(label5);
@@ -90,26 +90,26 @@
             dataGridView1.Size = new Size(624, 444);
             dataGridView1.TabIndex = 3;
             // 
-            // label6
+            // lblChucVu
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(94, 102);
-            label6.Name = "label6";
-            label6.Size = new Size(22, 23);
-            label6.TabIndex = 2;
-            label6.Text = "...";
+            lblChucVu.AutoSize = true;
+            lblChucVu.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblChucVu.Location = new Point(94, 102);
+            lblChucVu.Name = "lblChucVu";
+            lblChucVu.Size = new Size(22, 23);
+            lblChucVu.TabIndex = 2;
+            lblChucVu.Text = "...";
             // 
-            // label4
+            // lblTen
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(116, 78);
-            label4.Name = "label4";
-            label4.Size = new Size(22, 23);
-            label4.TabIndex = 2;
-            label4.Text = "...";
-            label4.Click += label4_Click;
+            lblTen.AutoSize = true;
+            lblTen.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTen.Location = new Point(116, 78);
+            lblTen.Name = "lblTen";
+            lblTen.Size = new Size(22, 23);
+            lblTen.TabIndex = 2;
+            lblTen.Text = "...";
+            lblTen.Click += label4_Click;
             // 
             // lblNgay
             // 
@@ -188,7 +188,7 @@
             BackColor = Color.FromArgb(170, 160, 160);
             ClientSize = new Size(682, 853);
             Controls.Add(panel1);
-            Controls.Add(button1);
+            Controls.Add(btnIn);
             Name = "frmInPhieuXuat";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "In Phiếu Xuất";
@@ -201,15 +201,15 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnIn;
         private Panel panel1;
         private Label lblNgay;
         private Label label2;
         private Label label1;
         private PictureBox pictureBox1;
         private DataGridView dataGridView1;
-        private Label label6;
-        private Label label4;
+        private Label lblChucVu;
+        private Label lblTen;
         private Label label7;
         private Label label5;
         private Label label3;
