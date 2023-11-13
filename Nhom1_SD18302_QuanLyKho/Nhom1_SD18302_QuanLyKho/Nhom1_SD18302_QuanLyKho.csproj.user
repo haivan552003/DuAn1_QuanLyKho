@@ -4,15 +4,6 @@
     <Compile Update="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DoanhThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="DoiMatKhau.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="HoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="InPhieuNhap.cs">
       <SubType>Form</SubType>
     </Compile>

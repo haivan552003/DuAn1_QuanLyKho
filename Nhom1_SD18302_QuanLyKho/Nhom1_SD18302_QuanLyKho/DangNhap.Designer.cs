@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             panel1 = new Panel();
             button1 = new Button();
@@ -196,22 +197,14 @@
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+=======
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "DangNhap";
+>>>>>>> parent of 1bf84c6 (thiết kế form HoaDon,DangNhap,DoiMatKhau)
         }
 
         #endregion
-
-        private Panel panel1;
-        private Label lblMatKhau;
-        private Label lblTenTaiKhoan;
-        private Label label1;
-        private Panel panel2;
-        private Label label5;
-        private Label label4;
-        private PictureBox pictureBox1;
-        private TextBox txtMatKhau;
-        private TextBox txtTenTaiKhoan;
-        private Label label6;
-        private Button button1;
-        private PictureBox pictureBox2;
     }
 }
