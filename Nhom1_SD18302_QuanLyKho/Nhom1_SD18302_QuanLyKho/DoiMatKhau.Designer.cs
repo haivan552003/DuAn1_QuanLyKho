@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
-            pictureBox1 = new PictureBox();
             txtMatKhauCu = new TextBox();
             txtTenTaiKhoan = new TextBox();
             lblMatKhauCu = new Label();
@@ -41,18 +40,9 @@
             btnXacNhan = new Button();
             button1 = new Button();
             label1 = new Label();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(181, 63);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
             // 
             // txtMatKhauCu
             // 
@@ -156,6 +146,16 @@
             label1.TabIndex = 12;
             label1.Text = "ĐỔI MẬT KHẨU";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(181, 63);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(150, 50);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
+            // 
             // DoiMatKhau
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -185,8 +185,6 @@
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private TextBox txtMatKhauCu;
         private TextBox txtTenTaiKhoan;
         private Label lblMatKhauCu;
@@ -198,5 +196,6 @@
         private Button btnXacNhan;
         private Button button1;
         private Label label1;
+        private PictureBox pictureBox1;
     }
 }

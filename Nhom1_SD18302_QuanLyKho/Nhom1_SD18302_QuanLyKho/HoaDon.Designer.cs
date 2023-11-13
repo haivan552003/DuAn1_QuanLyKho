@@ -38,7 +38,6 @@
             lblMaHoaDon = new Label();
             txtMaHoaDon = new TextBox();
             lblKhachHang = new Label();
-            txtKhachHang = new TextBox();
             lblHang = new Label();
             txtHang = new TextBox();
             label2 = new Label();
@@ -54,10 +53,11 @@
             btnThem = new Button();
             btnCapNhat = new Button();
             btnLamMoi = new Button();
-            btnXoa = new Button();
             btnIn = new Button();
             lblTienCoc = new Label();
             lblThanhTien = new Label();
+            cboKhachHang = new ComboBox();
+            btnXoa = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -149,13 +149,6 @@
             lblKhachHang.TabIndex = 9;
             lblKhachHang.Text = "Khách hàng:";
             lblKhachHang.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // txtKhachHang
-            // 
-            txtKhachHang.Location = new Point(141, 459);
-            txtKhachHang.Name = "txtKhachHang";
-            txtKhachHang.Size = new Size(260, 27);
-            txtKhachHang.TabIndex = 10;
             // 
             // lblHang
             // 
@@ -312,21 +305,6 @@
             btnLamMoi.TextAlign = ContentAlignment.MiddleRight;
             btnLamMoi.UseVisualStyleBackColor = false;
             // 
-            // btnXoa
-            // 
-            btnXoa.BackColor = Color.FromArgb(132, 77, 54);
-            btnXoa.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnXoa.ForeColor = Color.White;
-            btnXoa.Image = (Image)resources.GetObject("btnXoa.Image");
-            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
-            btnXoa.Location = new Point(737, 596);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(71, 40);
-            btnXoa.TabIndex = 14;
-            btnXoa.Text = "Xóa";
-            btnXoa.TextAlign = ContentAlignment.MiddleRight;
-            btnXoa.UseVisualStyleBackColor = false;
-            // 
             // btnIn
             // 
             btnIn.BackColor = Color.FromArgb(134, 179, 209);
@@ -366,12 +344,36 @@
             lblThanhTien.Text = "Thành tiền:";
             lblThanhTien.TextAlign = ContentAlignment.TopCenter;
             // 
+            // cboKhachHang
+            // 
+            cboKhachHang.FormattingEnabled = true;
+            cboKhachHang.Location = new Point(141, 458);
+            cboKhachHang.Name = "cboKhachHang";
+            cboKhachHang.Size = new Size(260, 28);
+            cboKhachHang.TabIndex = 15;
+            // 
+            // btnXoa
+            // 
+            btnXoa.BackColor = Color.FromArgb(132, 77, 54);
+            btnXoa.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnXoa.ForeColor = Color.White;
+            btnXoa.Image = (Image)resources.GetObject("btnXoa.Image");
+            btnXoa.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXoa.Location = new Point(737, 596);
+            btnXoa.Name = "btnXoa";
+            btnXoa.Size = new Size(71, 40);
+            btnXoa.TabIndex = 14;
+            btnXoa.Text = "Xóa";
+            btnXoa.TextAlign = ContentAlignment.MiddleRight;
+            btnXoa.UseVisualStyleBackColor = false;
+            // 
             // HoaDon
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(170, 160, 160);
             ClientSize = new Size(820, 660);
+            Controls.Add(cboKhachHang);
             Controls.Add(btnXoa);
             Controls.Add(btnLamMoi);
             Controls.Add(btnCapNhat);
@@ -384,7 +386,6 @@
             Controls.Add(txtDonGia);
             Controls.Add(txtSoLuong);
             Controls.Add(txtHang);
-            Controls.Add(txtKhachHang);
             Controls.Add(txtMaHoaDon);
             Controls.Add(lblDonGia);
             Controls.Add(label2);
@@ -424,7 +425,6 @@
         private Label lblMaHoaDon;
         private TextBox txtMaHoaDon;
         private Label lblKhachHang;
-        private TextBox txtKhachHang;
         private Label lblHang;
         private TextBox txtHang;
         private Label label2;
@@ -440,9 +440,10 @@
         private Button btnThem;
         private Button btnCapNhat;
         private Button btnLamMoi;
-        private Button btnXoa;
         private Button btnIn;
         private Label lblTienCoc;
         private Label lblThanhTien;
+        private ComboBox cboKhachHang;
+        private Button btnXoa;
     }
 }
