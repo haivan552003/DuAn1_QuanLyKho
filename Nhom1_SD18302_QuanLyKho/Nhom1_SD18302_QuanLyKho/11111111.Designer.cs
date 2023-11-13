@@ -45,7 +45,6 @@
             txtMaND = new TextBox();
             txtTimKiem = new TextBox();
             cboSapXep = new ComboBox();
-            pictureBox1 = new PictureBox();
             label5 = new Label();
             txtTuoi = new Label();
             txtTen = new Label();
@@ -56,7 +55,6 @@
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnTim).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnLamMoi
@@ -228,17 +226,6 @@
             cboSapXep.Size = new Size(150, 28);
             cboSapXep.TabIndex = 17;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.FromArgb(170, 160, 160);
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(69, 27);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 16;
-            pictureBox1.TabStop = false;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -356,7 +343,6 @@
             Controls.Add(txtMaND);
             Controls.Add(txtTimKiem);
             Controls.Add(cboSapXep);
-            Controls.Add(pictureBox1);
             Controls.Add(label5);
             Controls.Add(txtTuoi);
             Controls.Add(txtTen);
@@ -369,7 +355,6 @@
             Text = "_11111111";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnTim).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -392,7 +377,6 @@
         private TextBox txtMaND;
         private TextBox txtTimKiem;
         private ComboBox cboSapXep;
-        private PictureBox pictureBox1;
         private Label label5;
         private Label txtTuoi;
         private Label txtTen;
