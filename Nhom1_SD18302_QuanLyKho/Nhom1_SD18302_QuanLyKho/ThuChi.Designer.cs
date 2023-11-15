@@ -1,6 +1,6 @@
 ﻿namespace Nhom1_SD18302_QuanLyKho
 {
-    partial class ThuChi
+    partial class frmThuChi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThuChi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThuChi));
             dataGridView1 = new DataGridView();
             pictureBox1 = new PictureBox();
             label1 = new Label();
@@ -40,22 +40,22 @@
             // 
             dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(43, 133);
+            dataGridView1.Location = new Point(11, 164);
             dataGridView1.Margin = new Padding(4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(1026, 437);
+            dataGridView1.Size = new Size(796, 295);
             dataGridView1.TabIndex = 54;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(170, 160, 160);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(80, 38);
+            pictureBox1.Location = new Point(27, 13);
             pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(188, 62);
+            pictureBox1.Size = new Size(150, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 50;
             pictureBox1.TabStop = false;
@@ -63,27 +63,29 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(475, 50);
+            label1.Location = new Point(337, 52);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(136, 41);
+            label1.Size = new Size(92, 28);
             label1.TabIndex = 49;
             label1.Text = "THU CHI";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // ThuChi
+            // frmThuChi
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(170, 160, 160);
-            ClientSize = new Size(1105, 633);
+            ClientSize = new Size(820, 660);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
-            Name = "ThuChi";
-            Text = "ThuChi";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "frmThuChi";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Thu Chi";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

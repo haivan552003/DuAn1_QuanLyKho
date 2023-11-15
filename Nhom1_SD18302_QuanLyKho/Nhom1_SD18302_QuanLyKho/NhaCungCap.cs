@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Nhom1_SD18302_QuanLyKho
 {
-    public partial class NhaCungCap : Form
+    public partial class frmNhaCungCap : Form
     {
-        public NhaCungCap()
+        public frmNhaCungCap()
         {
             InitializeComponent();
         }
+
+
     }
 }

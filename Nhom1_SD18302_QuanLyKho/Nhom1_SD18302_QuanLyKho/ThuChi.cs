@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace Nhom1_SD18302_QuanLyKho
 {
-    public partial class ThuChi : Form
+    public partial class frmThuChi : Form
     {
-        public ThuChi()
+        public frmThuChi()
         {
             InitializeComponent();
         }
+
+
     }
 }
