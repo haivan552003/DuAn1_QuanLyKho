@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThuChi));
-            dataGridView1 = new DataGridView();
+            dgvThongtin = new DataGridView();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvThongtin).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dgvThongtin
             // 
-            dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(11, 164);
-            dataGridView1.Margin = new Padding(4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(796, 295);
-            dataGridView1.TabIndex = 54;
+            dgvThongtin.BackgroundColor = SystemColors.ActiveBorder;
+            dgvThongtin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvThongtin.Location = new Point(11, 164);
+            dgvThongtin.Margin = new Padding(4);
+            dgvThongtin.Name = "dgvThongtin";
+            dgvThongtin.RowHeadersWidth = 51;
+            dgvThongtin.RowTemplate.Height = 29;
+            dgvThongtin.Size = new Size(796, 295);
+            dgvThongtin.TabIndex = 54;
             // 
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.FromArgb(170, 160, 160);
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(27, 13);
+            pictureBox1.Location = new Point(26, 30);
             pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(150, 50);
@@ -79,14 +79,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(170, 160, 160);
             ClientSize = new Size(820, 660);
-            Controls.Add(dataGridView1);
+            Controls.Add(dgvThongtin);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmThuChi";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Thu Chi";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvThongtin).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -94,7 +94,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView dgvThongtin;
         private PictureBox pictureBox1;
         private Label label1;
     }

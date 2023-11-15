@@ -41,7 +41,6 @@ D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\b
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\bin\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.pdb
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmInPhieuNhap.resources
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmInPhieuXuat.resources
-D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.KhachHang.resources
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmMain.resources
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmNhanVien.resources
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.Properties.Resources.resources
@@ -57,3 +56,5 @@ D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\o
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\ref\Nhom1_SD18302_QuanLyKho.dll
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmNhaCungCap.resources
 D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmThuChi.resources
+D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.sourcelink.json
+D:\FPT\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmKhachHang.resources

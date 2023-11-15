@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nhom1_SD18302_QuanLyKho
 {
-    public partial class KhachHang : Form
+    public partial class frmKhachHang : Form
     {
-        public KhachHang()
+        public frmKhachHang()
         {
             InitializeComponent();
         }
