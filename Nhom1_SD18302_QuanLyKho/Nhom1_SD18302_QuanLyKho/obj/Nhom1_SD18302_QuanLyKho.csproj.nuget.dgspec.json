@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {}
+    "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {}
   },
   "projects": {
-    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {
+    "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
+        "projectUniqueName": "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
         "projectName": "Nhom1_SD18302_QuanLyKho",
-        "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\obj\\",
+        "projectPath": "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
+        "packagesPath": "C:\\Users\\Minh Kha\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Minh Kha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,7 +60,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
