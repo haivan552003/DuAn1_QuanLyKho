@@ -408,22 +408,24 @@
             label49 = new Label();
             txt_sdtncc = new TextBox();
             label50 = new Label();
-            txt_maNguoidungNCC = new TextBox();
             label51 = new Label();
             label52 = new Label();
             txt_tenNcc = new TextBox();
             label53 = new Label();
-            txt_ncc = new TextBox();
             timer3 = new System.Windows.Forms.Timer(components);
             timer4 = new System.Windows.Forms.Timer(components);
             label57 = new Label();
-            lsb_diachiNCC = new ListBox();
             ptb_timNCC = new PictureBox();
             txt_timNCC = new TextBox();
             comboBox5 = new ComboBox();
             pictureBox36 = new PictureBox();
             label54 = new Label();
             dv_NCC = new DataGridView();
+            richTextBox1 = new RichTextBox();
+            cboMaNCC = new ComboBox();
+            cboMaND = new ComboBox();
+            btnNhapExcel = new Button();
+            btnXuatExcel = new Button();
             panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             flowLayoutPanel2.SuspendLayout();
@@ -5058,58 +5060,51 @@
             // label49
             // 
             label49.AutoSize = true;
-            label49.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label49.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label49.ForeColor = SystemColors.ButtonHighlight;
-            label49.Location = new Point(423, 548);
+            label49.Location = new Point(435, 548);
             label49.Name = "label49";
-            label49.Size = new Size(115, 23);
+            label49.Size = new Size(121, 23);
             label49.TabIndex = 45;
             label49.Text = "Số điện thoại:";
             // 
             // txt_sdtncc
             // 
-            txt_sdtncc.Location = new Point(544, 543);
+            txt_sdtncc.Location = new Point(565, 543);
             txt_sdtncc.Name = "txt_sdtncc";
-            txt_sdtncc.Size = new Size(250, 27);
+            txt_sdtncc.Size = new Size(229, 27);
             txt_sdtncc.TabIndex = 44;
             // 
             // label50
             // 
             label50.AutoSize = true;
-            label50.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label50.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label50.ForeColor = SystemColors.ButtonHighlight;
-            label50.Location = new Point(472, 464);
+            label50.Location = new Point(437, 464);
             label50.Name = "label50";
-            label50.Size = new Size(66, 23);
+            label50.Size = new Size(70, 23);
             label50.TabIndex = 43;
             label50.Text = "Địa chỉ:";
-            // 
-            // txt_maNguoidungNCC
-            // 
-            txt_maNguoidungNCC.Location = new Point(171, 543);
-            txt_maNguoidungNCC.Name = "txt_maNguoidungNCC";
-            txt_maNguoidungNCC.Size = new Size(250, 27);
-            txt_maNguoidungNCC.TabIndex = 40;
             // 
             // label51
             // 
             label51.AutoSize = true;
-            label51.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label51.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label51.ForeColor = SystemColors.ButtonHighlight;
-            label51.Location = new Point(33, 548);
+            label51.Location = new Point(18, 548);
             label51.Name = "label51";
-            label51.Size = new Size(132, 23);
+            label51.Size = new Size(140, 23);
             label51.TabIndex = 41;
             label51.Text = "Mã người dùng:";
             // 
             // label52
             // 
             label52.AutoSize = true;
-            label52.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label52.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label52.ForeColor = SystemColors.ButtonHighlight;
-            label52.Location = new Point(125, 504);
+            label52.Location = new Point(18, 504);
             label52.Name = "label52";
-            label52.Size = new Size(40, 23);
+            label52.Size = new Size(42, 23);
             label52.TabIndex = 39;
             label52.Text = "Tên:";
             // 
@@ -5117,26 +5112,19 @@
             // 
             txt_tenNcc.Location = new Point(171, 503);
             txt_tenNcc.Name = "txt_tenNcc";
-            txt_tenNcc.Size = new Size(250, 27);
+            txt_tenNcc.Size = new Size(229, 27);
             txt_tenNcc.TabIndex = 38;
             // 
             // label53
             // 
             label53.AutoSize = true;
-            label53.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            label53.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label53.ForeColor = SystemColors.ButtonHighlight;
             label53.Location = new Point(18, 464);
             label53.Name = "label53";
-            label53.Size = new Size(147, 23);
+            label53.Size = new Size(151, 23);
             label53.TabIndex = 37;
             label53.Text = "Mã nhà cung cấp:";
-            // 
-            // txt_ncc
-            // 
-            txt_ncc.Location = new Point(171, 460);
-            txt_ncc.Name = "txt_ncc";
-            txt_ncc.Size = new Size(250, 27);
-            txt_ncc.TabIndex = 36;
             // 
             // timer3
             // 
@@ -5157,19 +5145,10 @@
             label57.TabIndex = 46;
             label57.TextAlign = ContentAlignment.TopCenter;
             // 
-            // lsb_diachiNCC
-            // 
-            lsb_diachiNCC.FormattingEnabled = true;
-            lsb_diachiNCC.ItemHeight = 20;
-            lsb_diachiNCC.Location = new Point(544, 453);
-            lsb_diachiNCC.Name = "lsb_diachiNCC";
-            lsb_diachiNCC.Size = new Size(250, 64);
-            lsb_diachiNCC.TabIndex = 52;
-            // 
             // ptb_timNCC
             // 
             ptb_timNCC.Image = (Image)resources.GetObject("ptb_timNCC.Image");
-            ptb_timNCC.Location = new Point(583, 78);
+            ptb_timNCC.Location = new Point(582, 69);
             ptb_timNCC.Name = "ptb_timNCC";
             ptb_timNCC.Size = new Size(30, 30);
             ptb_timNCC.TabIndex = 70;
@@ -5178,7 +5157,7 @@
             // txt_timNCC
             // 
             txt_timNCC.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_timNCC.Location = new Point(272, 78);
+            txt_timNCC.Location = new Point(271, 69);
             txt_timNCC.Name = "txt_timNCC";
             txt_timNCC.Size = new Size(310, 27);
             txt_timNCC.TabIndex = 69;
@@ -5187,14 +5166,14 @@
             // 
             comboBox5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new Point(12, 77);
+            comboBox5.Location = new Point(12, 69);
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new Size(150, 28);
             comboBox5.TabIndex = 68;
             // 
             // pictureBox36
             // 
-            pictureBox36.BackColor = Color.FromArgb(170, 160, 160);
+            pictureBox36.BackColor = SystemColors.AppWorkspace;
             pictureBox36.Image = (Image)resources.GetObject("pictureBox36.Image");
             pictureBox36.Location = new Point(12, 4);
             pictureBox36.Name = "pictureBox36";
@@ -5206,11 +5185,11 @@
             // label54
             // 
             label54.AutoSize = true;
-            label54.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label54.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label54.ForeColor = Color.White;
-            label54.Location = new Point(328, 19);
+            label54.Location = new Point(346, 9);
             label54.Name = "label54";
-            label54.Size = new Size(201, 35);
+            label54.Size = new Size(159, 28);
             label54.TabIndex = 66;
             label54.Text = "NHÀ CUNG CẤP";
             label54.TextAlign = ContentAlignment.TopCenter;
@@ -5218,44 +5197,96 @@
             // dv_NCC
             // 
             dv_NCC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dv_NCC.Location = new Point(-2, 111);
+            dv_NCC.Location = new Point(12, 105);
             dv_NCC.Name = "dv_NCC";
             dv_NCC.RowHeadersWidth = 51;
             dv_NCC.RowTemplate.Height = 29;
-            dv_NCC.Size = new Size(823, 318);
+            dv_NCC.Size = new Size(796, 318);
             dv_NCC.TabIndex = 65;
             dv_NCC.CellContentClick += dv_PX_CellContentClick;
             // 
-            // NhaCungCapp
+            // richTextBox1
+            // 
+            richTextBox1.Location = new Point(565, 452);
+            richTextBox1.Name = "richTextBox1";
+            richTextBox1.Size = new Size(229, 78);
+            richTextBox1.TabIndex = 71;
+            richTextBox1.Text = "";
+            // 
+            // cboMaNCC
+            // 
+            cboMaNCC.FormattingEnabled = true;
+            cboMaNCC.Location = new Point(171, 459);
+            cboMaNCC.Name = "cboMaNCC";
+            cboMaNCC.Size = new Size(229, 28);
+            cboMaNCC.TabIndex = 72;
+            // 
+            // cboMaND
+            // 
+            cboMaND.FormattingEnabled = true;
+            cboMaND.Location = new Point(171, 547);
+            cboMaND.Name = "cboMaND";
+            cboMaND.Size = new Size(229, 28);
+            cboMaND.TabIndex = 72;
+            // 
+            // btnNhapExcel
+            // 
+            btnNhapExcel.BackColor = Color.FromArgb(139, 189, 188);
+            btnNhapExcel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNhapExcel.ForeColor = Color.White;
+            btnNhapExcel.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNhapExcel.Location = new Point(346, 593);
+            btnNhapExcel.Name = "btnNhapExcel";
+            btnNhapExcel.Size = new Size(100, 45);
+            btnNhapExcel.TabIndex = 49;
+            btnNhapExcel.Text = "Nhập Excel";
+            btnNhapExcel.UseVisualStyleBackColor = false;
+            // 
+            // btnXuatExcel
+            // 
+            btnXuatExcel.BackColor = Color.FromArgb(139, 189, 188);
+            btnXuatExcel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnXuatExcel.ForeColor = Color.White;
+            btnXuatExcel.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXuatExcel.Location = new Point(452, 593);
+            btnXuatExcel.Name = "btnXuatExcel";
+            btnXuatExcel.Size = new Size(100, 45);
+            btnXuatExcel.TabIndex = 49;
+            btnXuatExcel.Text = "Xuất Excel";
+            btnXuatExcel.UseVisualStyleBackColor = false;
+            // 
+            // frmNhaCungCap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(170, 160, 160);
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(820, 660);
+            Controls.Add(cboMaND);
+            Controls.Add(cboMaNCC);
+            Controls.Add(richTextBox1);
             Controls.Add(ptb_timNCC);
             Controls.Add(txt_timNCC);
             Controls.Add(comboBox5);
             Controls.Add(pictureBox36);
             Controls.Add(label54);
             Controls.Add(dv_NCC);
-            Controls.Add(lsb_diachiNCC);
             Controls.Add(btn_InNcc);
             Controls.Add(btn_lammoiNCC);
             Controls.Add(btn_xoaNCC);
+            Controls.Add(btnXuatExcel);
+            Controls.Add(btnNhapExcel);
             Controls.Add(btn_capnhatNcc);
             Controls.Add(btn_themncc);
             Controls.Add(label49);
             Controls.Add(txt_sdtncc);
             Controls.Add(label50);
-            Controls.Add(txt_maNguoidungNCC);
             Controls.Add(label51);
             Controls.Add(label52);
             Controls.Add(txt_tenNcc);
             Controls.Add(label53);
-            Controls.Add(txt_ncc);
             Controls.Add(label57);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "NhaCungCapp";
+            Name = "frmNhaCungCap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "NhaCungCapp";
             panel14.ResumeLayout(false);
@@ -5795,21 +5826,23 @@
         private Label label49;
         private TextBox txt_sdtncc;
         private Label label50;
-        private TextBox txt_maNguoidungNCC;
         private Label label51;
         private Label label52;
         private TextBox txt_tenNcc;
         private Label label53;
-        private TextBox txt_ncc;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private Label label57;
-        private ListBox lsb_diachiNCC;
         private PictureBox ptb_timNCC;
         private TextBox txt_timNCC;
         private ComboBox comboBox5;
         private PictureBox pictureBox36;
         private Label label54;
         private DataGridView dv_NCC;
+        private RichTextBox richTextBox1;
+        private ComboBox cboMaNCC;
+        private ComboBox cboMaND;
+        private Button btnNhapExcel;
+        private Button btnXuatExcel;
     }
 }

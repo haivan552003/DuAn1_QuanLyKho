@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInPhieuNhap));
             panel1 = new Panel();
+            label8 = new Label();
+            lblTTSo = new Label();
+            label10 = new Label();
+            label11 = new Label();
             dataGridView1 = new DataGridView();
             lblSDT = new Label();
             lblTen = new Label();
@@ -41,10 +45,6 @@
             label1 = new Label();
             pictureBox1 = new PictureBox();
             btnIn = new Button();
-            label8 = new Label();
-            lblTTSo = new Label();
-            label10 = new Label();
-            label11 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -71,6 +71,46 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(658, 780);
             panel1.TabIndex = 11;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(191, 600);
+            label8.Name = "label8";
+            label8.Size = new Size(454, 23);
+            label8.TabIndex = 4;
+            label8.Text = "...............................................................................................................";
+            // 
+            // lblTTSo
+            // 
+            lblTTSo.AutoSize = true;
+            lblTTSo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            lblTTSo.Location = new Point(181, 576);
+            lblTTSo.Name = "lblTTSo";
+            lblTTSo.Size = new Size(22, 23);
+            lblTTSo.TabIndex = 5;
+            lblTTSo.Text = "...";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Location = new Point(16, 600);
+            label10.Name = "label10";
+            label10.Size = new Size(178, 23);
+            label10.TabIndex = 6;
+            label10.Text = "Thành tiền(bằng chữ):";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(16, 576);
+            label11.Name = "label11";
+            label11.Size = new Size(167, 23);
+            label11.TabIndex = 7;
+            label11.Text = "Thành tiền(bằng số):";
             // 
             // dataGridView1
             // 
@@ -188,51 +228,11 @@
             btnIn.TextAlign = ContentAlignment.MiddleRight;
             btnIn.UseVisualStyleBackColor = false;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(191, 600);
-            label8.Name = "label8";
-            label8.Size = new Size(454, 23);
-            label8.TabIndex = 4;
-            label8.Text = "...............................................................................................................";
-            // 
-            // lblTTSo
-            // 
-            lblTTSo.AutoSize = true;
-            lblTTSo.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            lblTTSo.Location = new Point(181, 576);
-            lblTTSo.Name = "lblTTSo";
-            lblTTSo.Size = new Size(22, 23);
-            lblTTSo.TabIndex = 5;
-            lblTTSo.Text = "...";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label10.Location = new Point(16, 600);
-            label10.Name = "label10";
-            label10.Size = new Size(178, 23);
-            label10.TabIndex = 6;
-            label10.Text = "Thành tiền(bằng chữ):";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(16, 576);
-            label11.Name = "label11";
-            label11.Size = new Size(167, 23);
-            label11.TabIndex = 7;
-            label11.Text = "Thành tiền(bằng số):";
-            // 
             // frmInPhieuNhap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(170, 160, 160);
+            BackColor = Color.FromArgb(169, 171, 184);
             ClientSize = new Size(682, 853);
             Controls.Add(panel1);
             Controls.Add(btnIn);

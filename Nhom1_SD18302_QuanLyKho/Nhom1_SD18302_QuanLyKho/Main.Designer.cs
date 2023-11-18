@@ -88,19 +88,19 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.5753441F));
             tableLayoutPanel1.Controls.Add(btnClose, 0, 0);
             tableLayoutPanel1.Controls.Add(btnMinSize, 0, 0);
-            tableLayoutPanel1.Location = new Point(919, 3);
+            tableLayoutPanel1.Location = new Point(933, 3);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(73, 34);
+            tableLayoutPanel1.Size = new Size(64, 25);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // btnClose
             // 
             btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.Location = new Point(42, 3);
+            btnClose.Location = new Point(37, 3);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(24, 24);
+            btnClose.Size = new Size(20, 19);
             btnClose.SizeMode = PictureBoxSizeMode.StretchImage;
             btnClose.TabIndex = 8;
             btnClose.TabStop = false;
@@ -111,7 +111,7 @@
             btnMinSize.Image = (Image)resources.GetObject("btnMinSize.Image");
             btnMinSize.Location = new Point(3, 3);
             btnMinSize.Name = "btnMinSize";
-            btnMinSize.Size = new Size(25, 28);
+            btnMinSize.Size = new Size(25, 19);
             btnMinSize.SizeMode = PictureBoxSizeMode.StretchImage;
             btnMinSize.TabIndex = 6;
             btnMinSize.TabStop = false;
@@ -131,7 +131,7 @@
             // 
             // pnSidebar
             // 
-            pnSidebar.BackColor = Color.FromArgb(71, 72, 83);
+            pnSidebar.BackColor = Color.FromArgb(36, 40, 77);
             pnSidebar.Controls.Add(pnNguoiDung);
             pnSidebar.Controls.Add(pnTrangChu);
             pnSidebar.Controls.Add(pnNhanvien);
@@ -198,11 +198,11 @@
             // 
             // btnTrangChu
             // 
-            btnTrangChu.BackColor = Color.FromArgb(71, 72, 83);
+            btnTrangChu.BackColor = Color.FromArgb(36, 40, 77);
             btnTrangChu.FlatAppearance.BorderSize = 0;
             btnTrangChu.FlatStyle = FlatStyle.Flat;
             btnTrangChu.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnTrangChu.ForeColor = Color.FromArgb(170, 160, 160);
+            btnTrangChu.ForeColor = Color.White;
             btnTrangChu.Image = (Image)resources.GetObject("btnTrangChu.Image");
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(0, 0);
@@ -224,11 +224,11 @@
             // 
             // btnNhanVien
             // 
-            btnNhanVien.BackColor = Color.FromArgb(71, 72, 83);
+            btnNhanVien.BackColor = Color.FromArgb(36, 40, 77);
             btnNhanVien.FlatAppearance.BorderSize = 0;
             btnNhanVien.FlatStyle = FlatStyle.Flat;
             btnNhanVien.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnNhanVien.ForeColor = Color.FromArgb(170, 160, 160);
+            btnNhanVien.ForeColor = Color.White;
             btnNhanVien.Image = (Image)resources.GetObject("btnNhanVien.Image");
             btnNhanVien.ImageAlign = ContentAlignment.MiddleLeft;
             btnNhanVien.Location = new Point(0, 0);
@@ -251,11 +251,11 @@
             // 
             // btnSanPham
             // 
-            btnSanPham.BackColor = Color.FromArgb(71, 72, 83);
+            btnSanPham.BackColor = Color.FromArgb(36, 40, 77);
             btnSanPham.FlatAppearance.BorderSize = 0;
             btnSanPham.FlatStyle = FlatStyle.Flat;
             btnSanPham.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSanPham.ForeColor = Color.FromArgb(170, 160, 160);
+            btnSanPham.ForeColor = Color.White;
             btnSanPham.Image = (Image)resources.GetObject("btnSanPham.Image");
             btnSanPham.ImageAlign = ContentAlignment.MiddleLeft;
             btnSanPham.Location = new Point(0, 0);
@@ -277,11 +277,11 @@
             // 
             // btnKhachHang
             // 
-            btnKhachHang.BackColor = Color.FromArgb(71, 72, 83);
+            btnKhachHang.BackColor = Color.FromArgb(36, 40, 77);
             btnKhachHang.FlatAppearance.BorderSize = 0;
             btnKhachHang.FlatStyle = FlatStyle.Flat;
             btnKhachHang.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnKhachHang.ForeColor = Color.FromArgb(170, 160, 160);
+            btnKhachHang.ForeColor = Color.White;
             btnKhachHang.Image = (Image)resources.GetObject("btnKhachHang.Image");
             btnKhachHang.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhachHang.Location = new Point(0, 0);
@@ -303,11 +303,11 @@
             // 
             // btnNhaCungCap
             // 
-            btnNhaCungCap.BackColor = Color.FromArgb(71, 72, 83);
+            btnNhaCungCap.BackColor = Color.FromArgb(36, 40, 77);
             btnNhaCungCap.FlatAppearance.BorderSize = 0;
             btnNhaCungCap.FlatStyle = FlatStyle.Flat;
             btnNhaCungCap.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnNhaCungCap.ForeColor = Color.FromArgb(170, 160, 160);
+            btnNhaCungCap.ForeColor = Color.White;
             btnNhaCungCap.Image = (Image)resources.GetObject("btnNhaCungCap.Image");
             btnNhaCungCap.ImageAlign = ContentAlignment.MiddleLeft;
             btnNhaCungCap.Location = new Point(0, 0);
@@ -329,11 +329,11 @@
             // 
             // btnHoaDon
             // 
-            btnHoaDon.BackColor = Color.FromArgb(71, 72, 83);
+            btnHoaDon.BackColor = Color.FromArgb(36, 40, 77);
             btnHoaDon.FlatAppearance.BorderSize = 0;
             btnHoaDon.FlatStyle = FlatStyle.Flat;
             btnHoaDon.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnHoaDon.ForeColor = Color.FromArgb(170, 160, 160);
+            btnHoaDon.ForeColor = Color.White;
             btnHoaDon.Image = (Image)resources.GetObject("btnHoaDon.Image");
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
             btnHoaDon.Location = new Point(0, 0);
@@ -393,11 +393,11 @@
             // 
             // btnThongKe
             // 
-            btnThongKe.BackColor = Color.FromArgb(71, 72, 83);
+            btnThongKe.BackColor = Color.FromArgb(36, 40, 77);
             btnThongKe.FlatAppearance.BorderSize = 0;
             btnThongKe.FlatStyle = FlatStyle.Flat;
             btnThongKe.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnThongKe.ForeColor = Color.FromArgb(170, 160, 160);
+            btnThongKe.ForeColor = Color.White;
             btnThongKe.Image = (Image)resources.GetObject("btnThongKe.Image");
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
             btnThongKe.Location = new Point(0, 0);
@@ -420,11 +420,11 @@
             // 
             // btnDangXuat
             // 
-            btnDangXuat.BackColor = Color.FromArgb(71, 72, 83);
+            btnDangXuat.BackColor = Color.FromArgb(36, 40, 77);
             btnDangXuat.FlatAppearance.BorderSize = 0;
             btnDangXuat.FlatStyle = FlatStyle.Flat;
             btnDangXuat.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDangXuat.ForeColor = Color.FromArgb(170, 160, 160);
+            btnDangXuat.ForeColor = Color.White;
             btnDangXuat.Image = (Image)resources.GetObject("btnDangXuat.Image");
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
             btnDangXuat.Location = new Point(0, 0);
@@ -458,10 +458,11 @@
             // 
             // tableLayoutPanel2
             // 
+            tableLayoutPanel2.BackColor = Color.FromArgb(36, 40, 77);
             tableLayoutPanel2.ColumnCount = 3;
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 47F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 84F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 70F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel1, 2, 0);
             tableLayoutPanel2.Controls.Add(label2, 1, 0);
             tableLayoutPanel2.Controls.Add(imgMenu, 0, 0);
@@ -477,7 +478,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.White;
             label2.Location = new Point(50, 0);
             label2.Name = "label2";
             label2.Padding = new Padding(0, 5, 0, 0);

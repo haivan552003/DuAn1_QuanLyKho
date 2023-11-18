@@ -206,6 +206,8 @@
             cbx_locPN = new ComboBox();
             pictureBox15 = new PictureBox();
             label23 = new Label();
+            btnXuatExcel = new Button();
+            btnNhapExcel = new Button();
             pnSanpham.SuspendLayout();
             pnNhanvien.SuspendLayout();
             pnTrangChu.SuspendLayout();
@@ -2130,101 +2132,101 @@
             // lbl_dongia
             // 
             lbl_dongia.AutoSize = true;
-            lbl_dongia.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_dongia.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_dongia.ForeColor = SystemColors.ButtonHighlight;
-            lbl_dongia.Location = new Point(436, 508);
+            lbl_dongia.Location = new Point(439, 508);
             lbl_dongia.Name = "lbl_dongia";
-            lbl_dongia.Size = new Size(74, 23);
+            lbl_dongia.Size = new Size(79, 23);
             lbl_dongia.TabIndex = 45;
             lbl_dongia.Text = "Đơn giá:";
             // 
             // txt_dongia
             // 
-            txt_dongia.Location = new Point(526, 503);
+            txt_dongia.Location = new Point(543, 503);
             txt_dongia.Name = "txt_dongia";
-            txt_dongia.Size = new Size(254, 27);
+            txt_dongia.Size = new Size(237, 27);
             txt_dongia.TabIndex = 44;
             // 
             // lbl_soluong
             // 
             lbl_soluong.AutoSize = true;
-            lbl_soluong.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_soluong.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_soluong.ForeColor = SystemColors.ButtonHighlight;
-            lbl_soluong.Location = new Point(428, 474);
+            lbl_soluong.Location = new Point(439, 474);
             lbl_soluong.Name = "lbl_soluong";
-            lbl_soluong.Size = new Size(82, 23);
+            lbl_soluong.Size = new Size(88, 23);
             lbl_soluong.TabIndex = 43;
             lbl_soluong.Text = "Số lượng:";
             // 
             // txt_soluongPN
             // 
-            txt_soluongPN.Location = new Point(526, 470);
+            txt_soluongPN.Location = new Point(543, 470);
             txt_soluongPN.Name = "txt_soluongPN";
-            txt_soluongPN.Size = new Size(254, 27);
+            txt_soluongPN.Size = new Size(237, 27);
             txt_soluongPN.TabIndex = 42;
             // 
             // txt_mahang
             // 
-            txt_mahang.Location = new Point(140, 538);
+            txt_mahang.Location = new Point(171, 536);
             txt_mahang.Name = "txt_mahang";
-            txt_mahang.Size = new Size(254, 27);
+            txt_mahang.Size = new Size(237, 27);
             txt_mahang.TabIndex = 40;
             // 
             // lbl_maHang
             // 
             lbl_maHang.AutoSize = true;
-            lbl_maHang.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_maHang.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_maHang.ForeColor = SystemColors.ButtonHighlight;
-            lbl_maHang.Location = new Point(47, 536);
+            lbl_maHang.Location = new Point(34, 536);
             lbl_maHang.Name = "lbl_maHang";
-            lbl_maHang.Size = new Size(82, 23);
+            lbl_maHang.Size = new Size(85, 23);
             lbl_maHang.TabIndex = 41;
             lbl_maHang.Text = "Mã hàng:";
             // 
             // lbl_makhPN
             // 
             lbl_makhPN.AutoSize = true;
-            lbl_makhPN.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_makhPN.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_makhPN.ForeColor = SystemColors.ButtonHighlight;
-            lbl_makhPN.Location = new Point(3, 506);
+            lbl_makhPN.Location = new Point(34, 506);
             lbl_makhPN.Name = "lbl_makhPN";
-            lbl_makhPN.Size = new Size(132, 23);
+            lbl_makhPN.Size = new Size(137, 23);
             lbl_makhPN.TabIndex = 39;
             lbl_makhPN.Text = "Mã khách hàng:";
             // 
             // txt_makh
             // 
-            txt_makh.Location = new Point(140, 505);
+            txt_makh.Location = new Point(171, 503);
             txt_makh.Name = "txt_makh";
-            txt_makh.Size = new Size(254, 27);
+            txt_makh.Size = new Size(237, 27);
             txt_makh.TabIndex = 38;
             // 
             // lbl_maPN
             // 
             lbl_maPN.AutoSize = true;
-            lbl_maPN.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_maPN.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_maPN.ForeColor = SystemColors.ButtonHighlight;
-            lbl_maPN.Location = new Point(9, 476);
+            lbl_maPN.Location = new Point(34, 476);
             lbl_maPN.Name = "lbl_maPN";
-            lbl_maPN.Size = new Size(130, 23);
+            lbl_maPN.Size = new Size(135, 23);
             lbl_maPN.TabIndex = 37;
             lbl_maPN.Text = "Mã phiếu nhập:";
             // 
             // dv_phieunhap
             // 
             dv_phieunhap.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dv_phieunhap.Location = new Point(3, 114);
+            dv_phieunhap.Location = new Point(12, 114);
             dv_phieunhap.Name = "dv_phieunhap";
             dv_phieunhap.RowHeadersWidth = 51;
             dv_phieunhap.RowTemplate.Height = 29;
-            dv_phieunhap.Size = new Size(815, 336);
+            dv_phieunhap.Size = new Size(796, 336);
             dv_phieunhap.TabIndex = 35;
             // 
             // txt_mapn
             // 
-            txt_mapn.Location = new Point(140, 472);
+            txt_mapn.Location = new Point(171, 470);
             txt_mapn.Name = "txt_mapn";
-            txt_mapn.Size = new Size(254, 27);
+            txt_mapn.Size = new Size(237, 27);
             txt_mapn.TabIndex = 36;
             // 
             // sidebarTransition
@@ -2249,25 +2251,25 @@
             // lbl_thanhtien
             // 
             lbl_thanhtien.AutoSize = true;
-            lbl_thanhtien.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl_thanhtien.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_thanhtien.ForeColor = SystemColors.ButtonHighlight;
-            lbl_thanhtien.Location = new Point(414, 540);
+            lbl_thanhtien.Location = new Point(439, 540);
             lbl_thanhtien.Name = "lbl_thanhtien";
-            lbl_thanhtien.Size = new Size(96, 23);
+            lbl_thanhtien.Size = new Size(100, 23);
             lbl_thanhtien.TabIndex = 53;
             lbl_thanhtien.Text = "Thành tiền:";
             // 
             // txt_thanhtien
             // 
-            txt_thanhtien.Location = new Point(526, 536);
+            txt_thanhtien.Location = new Point(543, 536);
             txt_thanhtien.Name = "txt_thanhtien";
-            txt_thanhtien.Size = new Size(254, 27);
+            txt_thanhtien.Size = new Size(237, 27);
             txt_thanhtien.TabIndex = 52;
             // 
             // ptb_timPN
             // 
             ptb_timPN.Image = (Image)resources.GetObject("ptb_timPN.Image");
-            ptb_timPN.Location = new Point(579, 78);
+            ptb_timPN.Location = new Point(579, 67);
             ptb_timPN.Name = "ptb_timPN";
             ptb_timPN.Size = new Size(30, 30);
             ptb_timPN.TabIndex = 58;
@@ -2276,7 +2278,7 @@
             // txt_timkiemPN
             // 
             txt_timkiemPN.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_timkiemPN.Location = new Point(268, 78);
+            txt_timkiemPN.Location = new Point(263, 70);
             txt_timkiemPN.Name = "txt_timkiemPN";
             txt_timkiemPN.Size = new Size(310, 27);
             txt_timkiemPN.TabIndex = 57;
@@ -2285,16 +2287,16 @@
             // 
             cbx_locPN.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cbx_locPN.FormattingEnabled = true;
-            cbx_locPN.Location = new Point(8, 77);
+            cbx_locPN.Location = new Point(12, 69);
             cbx_locPN.Name = "cbx_locPN";
             cbx_locPN.Size = new Size(150, 28);
             cbx_locPN.TabIndex = 56;
             // 
             // pictureBox15
             // 
-            pictureBox15.BackColor = Color.FromArgb(170, 160, 160);
+            pictureBox15.BackColor = SystemColors.AppWorkspace;
             pictureBox15.Image = (Image)resources.GetObject("pictureBox15.Image");
-            pictureBox15.Location = new Point(8, 4);
+            pictureBox15.Location = new Point(12, 4);
             pictureBox15.Name = "pictureBox15";
             pictureBox15.Size = new Size(150, 50);
             pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -2304,21 +2306,49 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label23.ForeColor = Color.White;
-            label23.Location = new Point(324, 19);
+            label23.Location = new Point(349, 9);
             label23.Name = "label23";
-            label23.Size = new Size(162, 35);
+            label23.Size = new Size(130, 28);
             label23.TabIndex = 54;
             label23.Text = "PHIẾU NHẬP";
             label23.TextAlign = ContentAlignment.TopCenter;
             // 
-            // PhieuNhappp
+            // btnXuatExcel
+            // 
+            btnXuatExcel.BackColor = Color.FromArgb(139, 189, 188);
+            btnXuatExcel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnXuatExcel.ForeColor = Color.White;
+            btnXuatExcel.ImageAlign = ContentAlignment.MiddleLeft;
+            btnXuatExcel.Location = new Point(439, 592);
+            btnXuatExcel.Name = "btnXuatExcel";
+            btnXuatExcel.Size = new Size(100, 45);
+            btnXuatExcel.TabIndex = 71;
+            btnXuatExcel.Text = "Xuất Excel";
+            btnXuatExcel.UseVisualStyleBackColor = false;
+            // 
+            // btnNhapExcel
+            // 
+            btnNhapExcel.BackColor = Color.FromArgb(139, 189, 188);
+            btnNhapExcel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNhapExcel.ForeColor = Color.White;
+            btnNhapExcel.ImageAlign = ContentAlignment.MiddleLeft;
+            btnNhapExcel.Location = new Point(333, 592);
+            btnNhapExcel.Name = "btnNhapExcel";
+            btnNhapExcel.Size = new Size(100, 45);
+            btnNhapExcel.TabIndex = 72;
+            btnNhapExcel.Text = "Nhập Excel";
+            btnNhapExcel.UseVisualStyleBackColor = false;
+            // 
+            // frmPhieuNhap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(170, 160, 160);
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(820, 660);
+            Controls.Add(btnXuatExcel);
+            Controls.Add(btnNhapExcel);
             Controls.Add(ptb_timPN);
             Controls.Add(txt_timkiemPN);
             Controls.Add(cbx_locPN);
@@ -2344,7 +2374,7 @@
             Controls.Add(txt_mapn);
             Controls.Add(label31);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "PhieuNhappp";
+            Name = "frmPhieuNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PhieuNhappp";
             pnSanpham.ResumeLayout(false);
@@ -2589,5 +2619,7 @@
         private ComboBox cbx_locPN;
         private PictureBox pictureBox15;
         private Label label23;
+        private Button btnXuatExcel;
+        private Button btnNhapExcel;
     }
 }

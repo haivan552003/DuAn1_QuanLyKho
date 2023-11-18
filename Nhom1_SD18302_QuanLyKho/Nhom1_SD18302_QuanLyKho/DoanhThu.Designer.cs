@@ -39,7 +39,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
+            pictureBox1.Location = new Point(12, 9);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(150, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -49,20 +49,21 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(12, 100);
+            dataGridView1.Location = new Point(12, 65);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(796, 548);
+            dataGridView1.Size = new Size(796, 583);
             dataGridView1.TabIndex = 1;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(285, 24);
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(349, 9);
             label1.Name = "label1";
-            label1.Size = new Size(187, 38);
+            label1.Size = new Size(134, 28);
             label1.TabIndex = 2;
             label1.Text = "DOANH THU";
             // 
@@ -70,7 +71,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(170, 160, 160);
+            BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(820, 660);
             Controls.Add(label1);
             Controls.Add(dataGridView1);
