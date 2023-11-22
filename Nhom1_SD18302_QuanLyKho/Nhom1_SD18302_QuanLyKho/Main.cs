@@ -349,7 +349,6 @@ namespace Nhom1_SD18302_QuanLyKho
             if (frmDoanhThu != null)
             {
                 frmDoanhThu.Close();
-
             }
             if (frmThuChi != null)
             {

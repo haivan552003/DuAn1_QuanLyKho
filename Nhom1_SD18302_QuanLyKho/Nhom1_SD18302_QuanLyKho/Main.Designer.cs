@@ -188,6 +188,7 @@
             // lblTenND
             // 
             lblTenND.AutoSize = true;
+            lblTenND.ForeColor = Color.White;
             lblTenND.Location = new Point(3, 115);
             lblTenND.Name = "lblTenND";
             lblTenND.Size = new Size(111, 20);
@@ -611,7 +612,7 @@
             ClientSize = new Size(1000, 700);
             Controls.Add(pnSidebar);
             Controls.Add(pnMenu);
-            ForeColor = Color.White;
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             IsMdiContainer = true;
             Name = "frmMain";

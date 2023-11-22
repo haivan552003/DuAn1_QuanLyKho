@@ -83,6 +83,7 @@
             // 
             txtMatKhau.Location = new Point(137, 277);
             txtMatKhau.Name = "txtMatKhau";
+            txtMatKhau.PasswordChar = '*';
             txtMatKhau.Size = new Size(227, 27);
             txtMatKhau.TabIndex = 3;
             // 

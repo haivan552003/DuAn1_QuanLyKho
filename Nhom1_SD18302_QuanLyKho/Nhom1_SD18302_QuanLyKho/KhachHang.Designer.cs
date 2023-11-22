@@ -37,13 +37,13 @@
             label1 = new Label();
             cboLoc = new ComboBox();
             pictureBox1 = new PictureBox();
-            dgvThongtin = new DataGridView();
-            pictureBox2 = new PictureBox();
+            dvThongTin = new DataGridView();
+            btnTim = new PictureBox();
             txtTimkiem = new TextBox();
             txtTen = new TextBox();
             txtDiachi = new TextBox();
             txtMaKH = new TextBox();
-            txtSĐT = new TextBox();
+            txtSDT = new TextBox();
             cboMaND = new ComboBox();
             btnXuatExcel = new Button();
             btnNhapExcel = new Button();
@@ -53,8 +53,8 @@
             btn_capnhatPX = new Button();
             btn_themPX = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dgvThongtin).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dvThongTin).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnTim).BeginInit();
             SuspendLayout();
             // 
             // label3
@@ -133,10 +133,12 @@
             // 
             cboLoc.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cboLoc.FormattingEnabled = true;
+            cboLoc.Items.AddRange(new object[] { "A - Z", "Z - A" });
             cboLoc.Location = new Point(12, 68);
             cboLoc.Name = "cboLoc";
             cboLoc.Size = new Size(150, 28);
             cboLoc.TabIndex = 42;
+            cboLoc.SelectedIndexChanged += cboLoc_SelectedIndexChanged;
             // 
             // pictureBox1
             // 
@@ -149,25 +151,29 @@
             pictureBox1.TabIndex = 41;
             pictureBox1.TabStop = false;
             // 
-            // dgvThongtin
+            // dvThongTin
             // 
-            dgvThongtin.BackgroundColor = SystemColors.ActiveBorder;
-            dgvThongtin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvThongtin.Location = new Point(8, 104);
-            dgvThongtin.Name = "dgvThongtin";
-            dgvThongtin.RowHeadersWidth = 51;
-            dgvThongtin.RowTemplate.Height = 29;
-            dgvThongtin.Size = new Size(796, 352);
-            dgvThongtin.TabIndex = 49;
+            dvThongTin.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dvThongTin.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dvThongTin.BackgroundColor = SystemColors.ActiveBorder;
+            dvThongTin.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dvThongTin.Location = new Point(8, 104);
+            dvThongTin.Name = "dvThongTin";
+            dvThongTin.RowHeadersWidth = 51;
+            dvThongTin.RowTemplate.Height = 29;
+            dvThongTin.Size = new Size(796, 352);
+            dvThongTin.TabIndex = 49;
+            dvThongTin.CellClick += dvThongTin_CellClick;
             // 
-            // pictureBox2
+            // btnTim
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(557, 68);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 30);
-            pictureBox2.TabIndex = 51;
-            pictureBox2.TabStop = false;
+            btnTim.Image = (Image)resources.GetObject("btnTim.Image");
+            btnTim.Location = new Point(557, 68);
+            btnTim.Name = "btnTim";
+            btnTim.Size = new Size(30, 30);
+            btnTim.TabIndex = 51;
+            btnTim.TabStop = false;
+            btnTim.Click += btnTim_Click;
             // 
             // txtTimkiem
             // 
@@ -201,13 +207,13 @@
             txtMaKH.Size = new Size(232, 27);
             txtMaKH.TabIndex = 56;
             // 
-            // txtSĐT
+            // txtSDT
             // 
-            txtSĐT.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSĐT.Location = new Point(556, 511);
-            txtSĐT.Name = "txtSĐT";
-            txtSĐT.Size = new Size(232, 27);
-            txtSĐT.TabIndex = 57;
+            txtSDT.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSDT.Location = new Point(556, 511);
+            txtSDT.Name = "txtSDT";
+            txtSDT.Size = new Size(232, 27);
+            txtSDT.TabIndex = 57;
             // 
             // cboMaND
             // 
@@ -289,6 +295,7 @@
             btn_xoaPX.Text = "Xóa";
             btn_xoaPX.TextAlign = ContentAlignment.MiddleRight;
             btn_xoaPX.UseVisualStyleBackColor = false;
+            btn_xoaPX.Click += btn_xoaPX_Click;
             // 
             // btn_capnhatPX
             // 
@@ -304,6 +311,7 @@
             btn_capnhatPX.Text = "Cập nhập";
             btn_capnhatPX.TextAlign = ContentAlignment.MiddleRight;
             btn_capnhatPX.UseVisualStyleBackColor = false;
+            btn_capnhatPX.Click += btn_capnhatPX_Click;
             // 
             // btn_themPX
             // 
@@ -320,6 +328,7 @@
             btn_themPX.Text = "Thêm";
             btn_themPX.TextAlign = ContentAlignment.MiddleRight;
             btn_themPX.UseVisualStyleBackColor = false;
+            btn_themPX.Click += btn_themPX_Click;
             // 
             // frmKhachHang
             // 
@@ -335,13 +344,13 @@
             Controls.Add(btn_capnhatPX);
             Controls.Add(btn_themPX);
             Controls.Add(cboMaND);
-            Controls.Add(txtSĐT);
+            Controls.Add(txtSDT);
             Controls.Add(txtMaKH);
             Controls.Add(txtDiachi);
             Controls.Add(txtTen);
-            Controls.Add(pictureBox2);
+            Controls.Add(btnTim);
             Controls.Add(txtTimkiem);
-            Controls.Add(dgvThongtin);
+            Controls.Add(dvThongTin);
             Controls.Add(cboLoc);
             Controls.Add(pictureBox1);
             Controls.Add(label3);
@@ -355,9 +364,10 @@
             Name = "frmKhachHang";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "KhachHang";
+            Load += frmKhachHang_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dgvThongtin).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dvThongTin).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnTim).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -371,13 +381,13 @@
         private Label label1;
         private ComboBox cboLoc;
         private PictureBox pictureBox1;
-        private DataGridView dgvThongtin;
-        private PictureBox pictureBox2;
+        private DataGridView dvThongTin;
+        private PictureBox btnTim;
         private TextBox txtTimkiem;
         private TextBox txtTen;
         private TextBox txtDiachi;
         private TextBox txtMaKH;
-        private TextBox txtSĐT;
+        private TextBox txtSDT;
         private ComboBox cboMaND;
         private Button btnXuatExcel;
         private Button btnNhapExcel;
