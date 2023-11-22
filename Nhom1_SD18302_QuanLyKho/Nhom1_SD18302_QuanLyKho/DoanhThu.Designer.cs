@@ -1,6 +1,6 @@
 ﻿namespace Nhom1_SD18302_QuanLyKho
 {
-    partial class DoanhThu
+    partial class frmDoanhThu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoanhThu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDoanhThu));
             pictureBox1 = new PictureBox();
             dataGridView1 = new DataGridView();
             label1 = new Label();
@@ -67,7 +67,7 @@
             label1.TabIndex = 2;
             label1.Text = "DOANH THU";
             // 
-            // DoanhThu
+            // frmDoanhThu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -77,7 +77,7 @@
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "DoanhThu";
+            Name = "frmDoanhThu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DoanhThu";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

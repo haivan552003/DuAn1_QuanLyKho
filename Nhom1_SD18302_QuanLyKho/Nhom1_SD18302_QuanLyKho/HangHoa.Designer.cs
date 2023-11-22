@@ -1,6 +1,6 @@
 ﻿namespace Nhom1_SD18302_QuanLyKho
 {
-    partial class HangHoa
+    partial class frmHangHoa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HangHoa));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHangHoa));
             btnXuatExcel = new Button();
             btnNhapExcel = new Button();
             btn_inPN = new Button();
@@ -394,7 +394,7 @@
             button1.TextAlign = ContentAlignment.MiddleRight;
             button1.UseVisualStyleBackColor = false;
             // 
-            // HangHoa
+            // frmHangHoa
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -432,7 +432,7 @@
             Controls.Add(comboBox1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "HangHoa";
+            Name = "frmHangHoa";
             Text = "Hàng Hóa";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvHoaDon).EndInit();

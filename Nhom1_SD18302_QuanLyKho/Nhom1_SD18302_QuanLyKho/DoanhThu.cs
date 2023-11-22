@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Nhom1_SD18302_QuanLyKho
 {
-    public partial class DoanhThu : Form
+    public partial class frmDoanhThu : Form
     {
-        public DoanhThu()
+        public frmDoanhThu()
         {
             InitializeComponent();
         }

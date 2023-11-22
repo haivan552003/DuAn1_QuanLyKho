@@ -40,7 +40,7 @@
             txtNhapLaiMatKhau = new TextBox();
             pictureBox1 = new PictureBox();
             btnThoat = new Button();
-            btnDangNhap = new Button();
+            btnDoiMatKhau = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -151,19 +151,19 @@
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
             // 
-            // btnDangNhap
+            // btnDoiMatKhau
             // 
-            btnDangNhap.BackColor = Color.FromArgb(134, 179, 209);
-            btnDangNhap.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnDangNhap.ForeColor = Color.White;
-            btnDangNhap.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDangNhap.Location = new Point(136, 370);
-            btnDangNhap.Name = "btnDangNhap";
-            btnDangNhap.Padding = new Padding(5, 0, 5, 0);
-            btnDangNhap.Size = new Size(148, 45);
-            btnDangNhap.TabIndex = 33;
-            btnDangNhap.Text = "Đăng nhập";
-            btnDangNhap.UseVisualStyleBackColor = false;
+            btnDoiMatKhau.BackColor = Color.FromArgb(134, 179, 209);
+            btnDoiMatKhau.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDoiMatKhau.ForeColor = Color.White;
+            btnDoiMatKhau.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDoiMatKhau.Location = new Point(136, 370);
+            btnDoiMatKhau.Name = "btnDoiMatKhau";
+            btnDoiMatKhau.Padding = new Padding(5, 0, 5, 0);
+            btnDoiMatKhau.Size = new Size(148, 45);
+            btnDoiMatKhau.TabIndex = 33;
+            btnDoiMatKhau.Text = "Đổi Mật Khẩu";
+            btnDoiMatKhau.UseVisualStyleBackColor = false;
             // 
             // DoiMatKhau
             // 
@@ -172,7 +172,7 @@
             BackColor = Color.FromArgb(72, 73, 103);
             ClientSize = new Size(613, 450);
             Controls.Add(btnThoat);
-            Controls.Add(btnDangNhap);
+            Controls.Add(btnDoiMatKhau);
             Controls.Add(pictureBox1);
             Controls.Add(txtNhapLaiMatKhau);
             Controls.Add(txtMatKhauMoi);
@@ -205,6 +205,6 @@
         private TextBox txtNhapLaiMatKhau;
         private PictureBox pictureBox1;
         private Button btnThoat;
-        private Button btnDangNhap;
+        private Button btnDoiMatKhau;
     }
 }

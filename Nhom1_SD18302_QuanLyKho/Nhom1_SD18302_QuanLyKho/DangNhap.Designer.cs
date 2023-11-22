@@ -1,6 +1,6 @@
 ﻿namespace Nhom1_SD18302_QuanLyKho
 {
-    partial class DangNhap
+    partial class frmDangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangNhap));
             label1 = new Label();
             lblTenTaiKhoan = new Label();
             lblMatKhau = new Label();
@@ -119,6 +119,7 @@
             btnDangNhap.TabIndex = 30;
             btnDangNhap.Text = "Đăng nhập";
             btnDangNhap.UseVisualStyleBackColor = false;
+            btnDangNhap.Click += btnDangNhap_Click;
             // 
             // btnThoat
             // 
@@ -133,8 +134,9 @@
             btnThoat.TabIndex = 32;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
+            btnThoat.Click += btnThoat_Click;
             // 
-            // DangNhap
+            // frmDangNhap
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -149,7 +151,7 @@
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "DangNhap";
+            Name = "frmDangNhap";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DangNhap";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

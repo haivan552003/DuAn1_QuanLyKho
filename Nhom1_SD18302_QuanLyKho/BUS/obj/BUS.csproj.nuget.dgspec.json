@@ -1,0 +1,196 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj": {}
+  },
+  "projects": {
+    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj",
+        "projectName": "BUS",
+        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj",
+        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
+        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj"
+              },
+              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "XAct.Core.PCL": {
+              "target": "Package",
+              "version": "[0.0.5014, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
+        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
+        "projectName": "DTO",
+        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
+        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -38,22 +38,27 @@
             pnNguoiDung = new Panel();
             pictureBox1 = new PictureBox();
             linkLabel1 = new LinkLabel();
-            label1 = new Label();
+            lblTenND = new Label();
             pnTrangChu = new Panel();
             btnTrangChu = new Button();
             pnNhanvien = new Panel();
             btnNhanVien = new Button();
-            pnSanpham = new Panel();
+            pnDanhMucSanpham = new Panel();
+            btnDanhMuc = new Button();
             btnSanPham = new Button();
+            btnDanhMucSP = new Button();
             pnKhachhang = new Panel();
             btnKhachHang = new Button();
             pnNhacungcap = new Panel();
             btnNhaCungCap = new Button();
-            pnHoadon = new Panel();
+            pnPhieu = new Panel();
+            btnPhieuXuat = new Button();
+            btnPhieuNhap = new Button();
             btnHoaDon = new Button();
+            btnPhieu = new Button();
             pnMenuMini = new Panel();
-            button10 = new Button();
-            button9 = new Button();
+            btnDoanhThu = new Button();
+            btnChiTieu = new Button();
             btnThongKe = new Button();
             pnDangxuat = new Panel();
             btnDangXuat = new Button();
@@ -62,6 +67,7 @@
             pnMenu = new Panel();
             tableLayoutPanel2 = new TableLayoutPanel();
             label2 = new Label();
+            phieuTransition = new System.Windows.Forms.Timer(components);
             tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnClose).BeginInit();
             ((System.ComponentModel.ISupportInitialize)btnMinSize).BeginInit();
@@ -71,10 +77,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnTrangChu.SuspendLayout();
             pnNhanvien.SuspendLayout();
-            pnSanpham.SuspendLayout();
+            pnDanhMucSanpham.SuspendLayout();
             pnKhachhang.SuspendLayout();
             pnNhacungcap.SuspendLayout();
-            pnHoadon.SuspendLayout();
+            pnPhieu.SuspendLayout();
             pnMenuMini.SuspendLayout();
             pnDangxuat.SuspendLayout();
             pnMenu.SuspendLayout();
@@ -135,10 +141,10 @@
             pnSidebar.Controls.Add(pnNguoiDung);
             pnSidebar.Controls.Add(pnTrangChu);
             pnSidebar.Controls.Add(pnNhanvien);
-            pnSidebar.Controls.Add(pnSanpham);
+            pnSidebar.Controls.Add(pnDanhMucSanpham);
             pnSidebar.Controls.Add(pnKhachhang);
             pnSidebar.Controls.Add(pnNhacungcap);
-            pnSidebar.Controls.Add(pnHoadon);
+            pnSidebar.Controls.Add(pnPhieu);
             pnSidebar.Controls.Add(pnMenuMini);
             pnSidebar.Controls.Add(pnDangxuat);
             pnSidebar.Dock = DockStyle.Left;
@@ -151,7 +157,7 @@
             // 
             pnNguoiDung.Controls.Add(pictureBox1);
             pnNguoiDung.Controls.Add(linkLabel1);
-            pnNguoiDung.Controls.Add(label1);
+            pnNguoiDung.Controls.Add(lblTenND);
             pnNguoiDung.Dock = DockStyle.Top;
             pnNguoiDung.Location = new Point(3, 3);
             pnNguoiDung.Name = "pnNguoiDung";
@@ -179,14 +185,14 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Đổi mật khẩu";
             // 
-            // label1
+            // lblTenND
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(37, 117);
-            label1.Name = "label1";
-            label1.Size = new Size(111, 20);
-            label1.TabIndex = 1;
-            label1.Text = "tên người dùng";
+            lblTenND.AutoSize = true;
+            lblTenND.Location = new Point(3, 115);
+            lblTenND.Name = "lblTenND";
+            lblTenND.Size = new Size(111, 20);
+            lblTenND.TabIndex = 1;
+            lblTenND.Text = "tên người dùng";
             // 
             // pnTrangChu
             // 
@@ -213,6 +219,7 @@
             btnTrangChu.Text = "        Trang chủ";
             btnTrangChu.TextAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.UseVisualStyleBackColor = false;
+            btnTrangChu.Click += btnTrangChu_Click;
             // 
             // pnNhanvien
             // 
@@ -241,13 +248,33 @@
             btnNhanVien.UseVisualStyleBackColor = false;
             btnNhanVien.Click += btnNhanVien_Click;
             // 
-            // pnSanpham
+            // pnDanhMucSanpham
             // 
-            pnSanpham.Controls.Add(btnSanPham);
-            pnSanpham.Location = new Point(3, 281);
-            pnSanpham.Name = "pnSanpham";
-            pnSanpham.Size = new Size(180, 40);
-            pnSanpham.TabIndex = 4;
+            pnDanhMucSanpham.Controls.Add(btnDanhMuc);
+            pnDanhMucSanpham.Controls.Add(btnSanPham);
+            pnDanhMucSanpham.Controls.Add(btnDanhMucSP);
+            pnDanhMucSanpham.Location = new Point(3, 281);
+            pnDanhMucSanpham.Name = "pnDanhMucSanpham";
+            pnDanhMucSanpham.Size = new Size(180, 40);
+            pnDanhMucSanpham.TabIndex = 4;
+            // 
+            // btnDanhMuc
+            // 
+            btnDanhMuc.BackColor = Color.FromArgb(36, 40, 77);
+            btnDanhMuc.FlatAppearance.BorderSize = 0;
+            btnDanhMuc.FlatStyle = FlatStyle.Flat;
+            btnDanhMuc.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDanhMuc.ForeColor = Color.White;
+            btnDanhMuc.Image = (Image)resources.GetObject("btnDanhMuc.Image");
+            btnDanhMuc.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDanhMuc.Location = new Point(0, 90);
+            btnDanhMuc.Name = "btnDanhMuc";
+            btnDanhMuc.Padding = new Padding(10, 0, 0, 0);
+            btnDanhMuc.Size = new Size(180, 30);
+            btnDanhMuc.TabIndex = 0;
+            btnDanhMuc.Text = "        Danh Mục";
+            btnDanhMuc.TextAlign = ContentAlignment.MiddleLeft;
+            btnDanhMuc.UseVisualStyleBackColor = false;
             // 
             // btnSanPham
             // 
@@ -258,7 +285,7 @@
             btnSanPham.ForeColor = Color.White;
             btnSanPham.Image = (Image)resources.GetObject("btnSanPham.Image");
             btnSanPham.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSanPham.Location = new Point(0, 0);
+            btnSanPham.Location = new Point(0, 45);
             btnSanPham.Name = "btnSanPham";
             btnSanPham.Padding = new Padding(10, 0, 0, 0);
             btnSanPham.Size = new Size(180, 30);
@@ -266,6 +293,25 @@
             btnSanPham.Text = "        Sản Phẩm";
             btnSanPham.TextAlign = ContentAlignment.MiddleLeft;
             btnSanPham.UseVisualStyleBackColor = false;
+            // 
+            // btnDanhMucSP
+            // 
+            btnDanhMucSP.BackColor = Color.FromArgb(36, 40, 77);
+            btnDanhMucSP.FlatAppearance.BorderSize = 0;
+            btnDanhMucSP.FlatStyle = FlatStyle.Flat;
+            btnDanhMucSP.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDanhMucSP.ForeColor = Color.White;
+            btnDanhMucSP.Image = (Image)resources.GetObject("btnDanhMucSP.Image");
+            btnDanhMucSP.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDanhMucSP.Location = new Point(0, 0);
+            btnDanhMucSP.Name = "btnDanhMucSP";
+            btnDanhMucSP.Padding = new Padding(10, 0, 0, 0);
+            btnDanhMucSP.Size = new Size(180, 30);
+            btnDanhMucSP.TabIndex = 0;
+            btnDanhMucSP.Text = "        Sản Phẩm";
+            btnDanhMucSP.TextAlign = ContentAlignment.MiddleLeft;
+            btnDanhMucSP.UseVisualStyleBackColor = false;
+            btnDanhMucSP.Click += btnDanhMucSP_Click;
             // 
             // pnKhachhang
             // 
@@ -292,6 +338,7 @@
             btnKhachHang.Text = "        Khách hàng";
             btnKhachHang.TextAlign = ContentAlignment.MiddleLeft;
             btnKhachHang.UseVisualStyleBackColor = false;
+            btnKhachHang.Click += btnKhachHang_Click;
             // 
             // pnNhacungcap
             // 
@@ -318,14 +365,56 @@
             btnNhaCungCap.Text = "        Nhà cung cấp";
             btnNhaCungCap.TextAlign = ContentAlignment.MiddleLeft;
             btnNhaCungCap.UseVisualStyleBackColor = false;
+            btnNhaCungCap.Click += btnNhaCungCap_Click;
             // 
-            // pnHoadon
+            // pnPhieu
             // 
-            pnHoadon.Controls.Add(btnHoaDon);
-            pnHoadon.Location = new Point(3, 419);
-            pnHoadon.Name = "pnHoadon";
-            pnHoadon.Size = new Size(180, 40);
-            pnHoadon.TabIndex = 4;
+            pnPhieu.Controls.Add(btnPhieuXuat);
+            pnPhieu.Controls.Add(btnPhieuNhap);
+            pnPhieu.Controls.Add(btnHoaDon);
+            pnPhieu.Controls.Add(btnPhieu);
+            pnPhieu.Location = new Point(3, 419);
+            pnPhieu.Name = "pnPhieu";
+            pnPhieu.Size = new Size(180, 40);
+            pnPhieu.TabIndex = 4;
+            // 
+            // btnPhieuXuat
+            // 
+            btnPhieuXuat.BackColor = Color.FromArgb(36, 40, 77);
+            btnPhieuXuat.FlatAppearance.BorderSize = 0;
+            btnPhieuXuat.FlatStyle = FlatStyle.Flat;
+            btnPhieuXuat.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPhieuXuat.ForeColor = Color.White;
+            btnPhieuXuat.Image = (Image)resources.GetObject("btnPhieuXuat.Image");
+            btnPhieuXuat.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPhieuXuat.Location = new Point(0, 138);
+            btnPhieuXuat.Name = "btnPhieuXuat";
+            btnPhieuXuat.Padding = new Padding(10, 0, 0, 0);
+            btnPhieuXuat.Size = new Size(180, 30);
+            btnPhieuXuat.TabIndex = 0;
+            btnPhieuXuat.Text = "        Phiếu Xuất";
+            btnPhieuXuat.TextAlign = ContentAlignment.MiddleLeft;
+            btnPhieuXuat.UseVisualStyleBackColor = false;
+            btnPhieuXuat.Click += btnPhieuXuat_Click;
+            // 
+            // btnPhieuNhap
+            // 
+            btnPhieuNhap.BackColor = Color.FromArgb(36, 40, 77);
+            btnPhieuNhap.FlatAppearance.BorderSize = 0;
+            btnPhieuNhap.FlatStyle = FlatStyle.Flat;
+            btnPhieuNhap.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPhieuNhap.ForeColor = Color.White;
+            btnPhieuNhap.Image = (Image)resources.GetObject("btnPhieuNhap.Image");
+            btnPhieuNhap.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPhieuNhap.Location = new Point(0, 93);
+            btnPhieuNhap.Name = "btnPhieuNhap";
+            btnPhieuNhap.Padding = new Padding(10, 0, 0, 0);
+            btnPhieuNhap.Size = new Size(180, 30);
+            btnPhieuNhap.TabIndex = 0;
+            btnPhieuNhap.Text = "        Phiếu Nhập";
+            btnPhieuNhap.TextAlign = ContentAlignment.MiddleLeft;
+            btnPhieuNhap.UseVisualStyleBackColor = false;
+            btnPhieuNhap.Click += btnPhieuNhap_Click;
             // 
             // btnHoaDon
             // 
@@ -336,7 +425,7 @@
             btnHoaDon.ForeColor = Color.White;
             btnHoaDon.Image = (Image)resources.GetObject("btnHoaDon.Image");
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHoaDon.Location = new Point(0, 0);
+            btnHoaDon.Location = new Point(0, 46);
             btnHoaDon.Name = "btnHoaDon";
             btnHoaDon.Padding = new Padding(10, 0, 0, 0);
             btnHoaDon.Size = new Size(180, 30);
@@ -344,52 +433,74 @@
             btnHoaDon.Text = "        Hóa đơn";
             btnHoaDon.TextAlign = ContentAlignment.MiddleLeft;
             btnHoaDon.UseVisualStyleBackColor = false;
+            btnHoaDon.Click += btnHoaDon_Click;
+            // 
+            // btnPhieu
+            // 
+            btnPhieu.BackColor = Color.FromArgb(36, 40, 77);
+            btnPhieu.FlatAppearance.BorderSize = 0;
+            btnPhieu.FlatStyle = FlatStyle.Flat;
+            btnPhieu.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnPhieu.ForeColor = Color.White;
+            btnPhieu.Image = (Image)resources.GetObject("btnPhieu.Image");
+            btnPhieu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnPhieu.Location = new Point(0, 0);
+            btnPhieu.Name = "btnPhieu";
+            btnPhieu.Padding = new Padding(10, 0, 0, 0);
+            btnPhieu.Size = new Size(180, 30);
+            btnPhieu.TabIndex = 0;
+            btnPhieu.Text = "        Phiếu";
+            btnPhieu.TextAlign = ContentAlignment.MiddleLeft;
+            btnPhieu.UseVisualStyleBackColor = false;
+            btnPhieu.Click += btnPhieu_Click;
             // 
             // pnMenuMini
             // 
-            pnMenuMini.Controls.Add(button10);
-            pnMenuMini.Controls.Add(button9);
+            pnMenuMini.Controls.Add(btnDoanhThu);
+            pnMenuMini.Controls.Add(btnChiTieu);
             pnMenuMini.Controls.Add(btnThongKe);
             pnMenuMini.Location = new Point(3, 465);
             pnMenuMini.Name = "pnMenuMini";
             pnMenuMini.Size = new Size(180, 40);
             pnMenuMini.TabIndex = 4;
             // 
-            // button10
+            // btnDoanhThu
             // 
-            button10.BackColor = Color.FromArgb(71, 72, 83);
-            button10.FlatAppearance.BorderSize = 0;
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button10.ForeColor = Color.FromArgb(170, 160, 160);
-            button10.Image = (Image)resources.GetObject("button10.Image");
-            button10.ImageAlign = ContentAlignment.MiddleLeft;
-            button10.Location = new Point(0, 87);
-            button10.Name = "button10";
-            button10.Padding = new Padding(10, 0, 0, 0);
-            button10.Size = new Size(180, 30);
-            button10.TabIndex = 0;
-            button10.Text = "        Doanh thu";
-            button10.TextAlign = ContentAlignment.MiddleLeft;
-            button10.UseVisualStyleBackColor = false;
+            btnDoanhThu.BackColor = Color.FromArgb(36, 40, 77);
+            btnDoanhThu.FlatAppearance.BorderSize = 0;
+            btnDoanhThu.FlatStyle = FlatStyle.Flat;
+            btnDoanhThu.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnDoanhThu.ForeColor = Color.White;
+            btnDoanhThu.Image = (Image)resources.GetObject("btnDoanhThu.Image");
+            btnDoanhThu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnDoanhThu.Location = new Point(0, 87);
+            btnDoanhThu.Name = "btnDoanhThu";
+            btnDoanhThu.Padding = new Padding(10, 0, 0, 0);
+            btnDoanhThu.Size = new Size(180, 30);
+            btnDoanhThu.TabIndex = 0;
+            btnDoanhThu.Text = "        Doanh thu";
+            btnDoanhThu.TextAlign = ContentAlignment.MiddleLeft;
+            btnDoanhThu.UseVisualStyleBackColor = false;
+            btnDoanhThu.Click += btnDoanhThu_Click;
             // 
-            // button9
+            // btnChiTieu
             // 
-            button9.BackColor = Color.FromArgb(71, 72, 83);
-            button9.FlatAppearance.BorderSize = 0;
-            button9.FlatStyle = FlatStyle.Flat;
-            button9.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            button9.ForeColor = Color.FromArgb(170, 160, 160);
-            button9.Image = (Image)resources.GetObject("button9.Image");
-            button9.ImageAlign = ContentAlignment.MiddleLeft;
-            button9.Location = new Point(0, 44);
-            button9.Name = "button9";
-            button9.Padding = new Padding(10, 0, 0, 0);
-            button9.Size = new Size(180, 30);
-            button9.TabIndex = 0;
-            button9.Text = "        Chi tiêu";
-            button9.TextAlign = ContentAlignment.MiddleLeft;
-            button9.UseVisualStyleBackColor = false;
+            btnChiTieu.BackColor = Color.FromArgb(36, 40, 77);
+            btnChiTieu.FlatAppearance.BorderSize = 0;
+            btnChiTieu.FlatStyle = FlatStyle.Flat;
+            btnChiTieu.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            btnChiTieu.ForeColor = Color.White;
+            btnChiTieu.Image = (Image)resources.GetObject("btnChiTieu.Image");
+            btnChiTieu.ImageAlign = ContentAlignment.MiddleLeft;
+            btnChiTieu.Location = new Point(0, 44);
+            btnChiTieu.Name = "btnChiTieu";
+            btnChiTieu.Padding = new Padding(10, 0, 0, 0);
+            btnChiTieu.Size = new Size(180, 30);
+            btnChiTieu.TabIndex = 0;
+            btnChiTieu.Text = "        Chi tiêu";
+            btnChiTieu.TextAlign = ContentAlignment.MiddleLeft;
+            btnChiTieu.UseVisualStyleBackColor = false;
+            btnChiTieu.Click += btnChiTieu_Click;
             // 
             // btnThongKe
             // 
@@ -487,6 +598,11 @@
             label2.Text = "Vật liệu xây dựng Đông Anh";
             label2.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // phieuTransition
+            // 
+            phieuTransition.Interval = 10;
+            phieuTransition.Tick += phieuTransition_Tick;
+            // 
             // frmMain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -501,6 +617,7 @@
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += frmMain_Load;
             tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)btnClose).EndInit();
             ((System.ComponentModel.ISupportInitialize)btnMinSize).EndInit();
@@ -511,10 +628,10 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnTrangChu.ResumeLayout(false);
             pnNhanvien.ResumeLayout(false);
-            pnSanpham.ResumeLayout(false);
+            pnDanhMucSanpham.ResumeLayout(false);
             pnKhachhang.ResumeLayout(false);
             pnNhacungcap.ResumeLayout(false);
-            pnHoadon.ResumeLayout(false);
+            pnPhieu.ResumeLayout(false);
             pnMenuMini.ResumeLayout(false);
             pnDangxuat.ResumeLayout(false);
             pnMenu.ResumeLayout(false);
@@ -529,14 +646,14 @@
         private Button btnTrangChu;
         private Panel pnNhanvien;
         private Button btnNhanVien;
-        private Panel pnSanpham;
-        private Button btnSanPham;
+        private Panel pnDanhMucSanpham;
+        private Button btnDanhMucSP;
         private Panel pnKhachhang;
         private Button btnKhachHang;
         private Panel pnNhacungcap;
         private Button btnNhaCungCap;
-        private Panel pnHoadon;
-        private Button btnHoaDon;
+        private Panel pnPhieu;
+        private Button btnPhieu;
         private Panel pnMenuMini;
         private Button btnThongKe;
         private Panel pnDangxuat;
@@ -545,8 +662,8 @@
         private TableLayoutPanel tableLayoutPanel1;
         private PictureBox btnClose;
         private PictureBox btnMinSize;
-        private Button button10;
-        private Button button9;
+        private Button btnDoanhThu;
+        private Button btnChiTieu;
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Timer sidebarTransition;
         private Panel pnMenu;
@@ -555,6 +672,12 @@
         private Panel pnNguoiDung;
         private PictureBox pictureBox1;
         private LinkLabel linkLabel1;
-        private Label label1;
+        private Label lblTenND;
+        private Button btnDanhMuc;
+        private Button btnSanPham;
+        private Button btnHoaDon;
+        private Button btnPhieuNhap;
+        private Button btnPhieuXuat;
+        private System.Windows.Forms.Timer phieuTransition;
     }
 }

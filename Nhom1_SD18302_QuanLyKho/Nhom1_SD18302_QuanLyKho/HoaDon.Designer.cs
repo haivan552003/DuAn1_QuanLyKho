@@ -1,6 +1,6 @@
 ﻿namespace Nhom1_SD18302_QuanLyKho
 {
-    partial class HoaDon
+    partial class frmHoaDon
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoaDon));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHoaDon));
             pictureBox1 = new PictureBox();
             comboBox1 = new ComboBox();
             label1 = new Label();
@@ -388,7 +388,7 @@
             btn_themPX.TextAlign = ContentAlignment.MiddleRight;
             btn_themPX.UseVisualStyleBackColor = false;
             // 
-            // HoaDon
+            // frmHoaDon
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -426,7 +426,7 @@
             Controls.Add(comboBox1);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "HoaDon";
+            Name = "frmHoaDon";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HoaDon";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -2414,11 +2414,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(337, 9);
             label2.Name = "label2";
-            label2.Size = new Size(157, 35);
+            label2.Size = new Size(125, 28);
             label2.TabIndex = 60;
             label2.Text = "PHIẾU XUẤT";
             label2.TextAlign = ContentAlignment.TopCenter;
