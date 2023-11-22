@@ -1,0 +1,11 @@
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\bin\Debug\net6.0\DTO.dll
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\bin\Debug\net6.0\DTO.pdb
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\DTO.dll
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\DTO.pdb
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\DTO\obj\Debug\net6.0\ref\DTO.dll
