@@ -17,6 +17,9 @@ namespace Nhom1_SD18302_QuanLyKho
             InitializeComponent();
         }
 
+        private void dvThongTin_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
     }
 }

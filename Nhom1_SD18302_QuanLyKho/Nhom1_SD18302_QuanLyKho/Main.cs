@@ -444,5 +444,10 @@ namespace Nhom1_SD18302_QuanLyKho
         {
             frmPhieuXuat = null;
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

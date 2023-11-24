@@ -1,6 +1,6 @@
 ﻿namespace Nhom1_SD18302_QuanLyKho
 {
-    partial class DoiMatKhau
+    partial class frmDoiMatKhau
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoiMatKhau));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDoiMatKhau));
             label1 = new Label();
             lblMatKhauCu = new Label();
             lblTenTaiKhoan = new Label();
@@ -49,9 +49,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(224, 80);
+            label1.Location = new Point(280, 100);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(161, 28);
+            label1.Size = new Size(194, 32);
             label1.TabIndex = 0;
             label1.Text = "ĐỔI MẬT KHẨU";
             // 
@@ -60,9 +61,10 @@
             lblMatKhauCu.AutoSize = true;
             lblMatKhauCu.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblMatKhauCu.ForeColor = Color.White;
-            lblMatKhauCu.Location = new Point(70, 221);
+            lblMatKhauCu.Location = new Point(88, 276);
+            lblMatKhauCu.Margin = new Padding(4, 0, 4, 0);
             lblMatKhauCu.Name = "lblMatKhauCu";
-            lblMatKhauCu.Size = new Size(111, 23);
+            lblMatKhauCu.Size = new Size(136, 30);
             lblMatKhauCu.TabIndex = 1;
             lblMatKhauCu.Text = "Mật khẩu cũ:";
             // 
@@ -71,9 +73,10 @@
             lblTenTaiKhoan.AutoSize = true;
             lblTenTaiKhoan.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblTenTaiKhoan.ForeColor = Color.White;
-            lblTenTaiKhoan.Location = new Point(70, 175);
+            lblTenTaiKhoan.Location = new Point(88, 219);
+            lblTenTaiKhoan.Margin = new Padding(4, 0, 4, 0);
             lblTenTaiKhoan.Name = "lblTenTaiKhoan";
-            lblTenTaiKhoan.Size = new Size(117, 23);
+            lblTenTaiKhoan.Size = new Size(146, 30);
             lblTenTaiKhoan.TabIndex = 1;
             lblTenTaiKhoan.Text = "Tên tài khoản:";
             // 
@@ -82,9 +85,10 @@
             lblMatKhauMoi.AutoSize = true;
             lblMatKhauMoi.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblMatKhauMoi.ForeColor = Color.White;
-            lblMatKhauMoi.Location = new Point(70, 270);
+            lblMatKhauMoi.Location = new Point(88, 338);
+            lblMatKhauMoi.Margin = new Padding(4, 0, 4, 0);
             lblMatKhauMoi.Name = "lblMatKhauMoi";
-            lblMatKhauMoi.Size = new Size(122, 23);
+            lblMatKhauMoi.Size = new Size(151, 30);
             lblMatKhauMoi.TabIndex = 1;
             lblMatKhauMoi.Text = "Mật khẩu mới:";
             // 
@@ -93,46 +97,52 @@
             lblNhapLaiMatKhauMoi.AutoSize = true;
             lblNhapLaiMatKhauMoi.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblNhapLaiMatKhauMoi.ForeColor = Color.White;
-            lblNhapLaiMatKhauMoi.Location = new Point(70, 319);
+            lblNhapLaiMatKhauMoi.Location = new Point(88, 399);
+            lblNhapLaiMatKhauMoi.Margin = new Padding(4, 0, 4, 0);
             lblNhapLaiMatKhauMoi.Name = "lblNhapLaiMatKhauMoi";
-            lblNhapLaiMatKhauMoi.Size = new Size(190, 23);
+            lblNhapLaiMatKhauMoi.Size = new Size(236, 30);
             lblNhapLaiMatKhauMoi.TabIndex = 1;
             lblNhapLaiMatKhauMoi.Text = "Nhập lại mật khẩu mới:";
             // 
             // txtTenTaiKhoan
             // 
-            txtTenTaiKhoan.Location = new Point(273, 171);
+            txtTenTaiKhoan.Location = new Point(341, 214);
+            txtTenTaiKhoan.Margin = new Padding(4);
             txtTenTaiKhoan.Name = "txtTenTaiKhoan";
-            txtTenTaiKhoan.Size = new Size(257, 27);
+            txtTenTaiKhoan.Size = new Size(320, 31);
             txtTenTaiKhoan.TabIndex = 2;
             // 
             // txtMatKhauCu
             // 
-            txtMatKhauCu.Location = new Point(273, 217);
+            txtMatKhauCu.Location = new Point(341, 271);
+            txtMatKhauCu.Margin = new Padding(4);
             txtMatKhauCu.Name = "txtMatKhauCu";
-            txtMatKhauCu.Size = new Size(257, 27);
+            txtMatKhauCu.Size = new Size(320, 31);
             txtMatKhauCu.TabIndex = 2;
             // 
             // txtMatKhauMoi
             // 
-            txtMatKhauMoi.Location = new Point(273, 266);
+            txtMatKhauMoi.Location = new Point(341, 332);
+            txtMatKhauMoi.Margin = new Padding(4);
             txtMatKhauMoi.Name = "txtMatKhauMoi";
-            txtMatKhauMoi.Size = new Size(257, 27);
+            txtMatKhauMoi.Size = new Size(320, 31);
             txtMatKhauMoi.TabIndex = 2;
             // 
             // txtNhapLaiMatKhau
             // 
-            txtNhapLaiMatKhau.Location = new Point(273, 315);
+            txtNhapLaiMatKhau.Location = new Point(341, 394);
+            txtNhapLaiMatKhau.Margin = new Padding(4);
             txtNhapLaiMatKhau.Name = "txtNhapLaiMatKhau";
-            txtNhapLaiMatKhau.Size = new Size(257, 27);
+            txtNhapLaiMatKhau.Size = new Size(320, 31);
             txtNhapLaiMatKhau.TabIndex = 2;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(229, 12);
+            pictureBox1.Location = new Point(286, 15);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 50);
+            pictureBox1.Size = new Size(188, 62);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -143,13 +153,15 @@
             btnThoat.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnThoat.ForeColor = Color.White;
             btnThoat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnThoat.Location = new Point(314, 370);
+            btnThoat.Location = new Point(392, 462);
+            btnThoat.Margin = new Padding(4);
             btnThoat.Name = "btnThoat";
-            btnThoat.Padding = new Padding(5, 0, 5, 0);
-            btnThoat.Size = new Size(148, 45);
+            btnThoat.Padding = new Padding(6, 0, 6, 0);
+            btnThoat.Size = new Size(185, 56);
             btnThoat.TabIndex = 34;
             btnThoat.Text = "Thoát";
             btnThoat.UseVisualStyleBackColor = false;
+            btnThoat.Click += btnThoat_Click;
             // 
             // btnDoiMatKhau
             // 
@@ -157,20 +169,22 @@
             btnDoiMatKhau.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             btnDoiMatKhau.ForeColor = Color.White;
             btnDoiMatKhau.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDoiMatKhau.Location = new Point(136, 370);
+            btnDoiMatKhau.Location = new Point(170, 462);
+            btnDoiMatKhau.Margin = new Padding(4);
             btnDoiMatKhau.Name = "btnDoiMatKhau";
-            btnDoiMatKhau.Padding = new Padding(5, 0, 5, 0);
-            btnDoiMatKhau.Size = new Size(148, 45);
+            btnDoiMatKhau.Padding = new Padding(6, 0, 6, 0);
+            btnDoiMatKhau.Size = new Size(185, 56);
             btnDoiMatKhau.TabIndex = 33;
             btnDoiMatKhau.Text = "Đổi Mật Khẩu";
             btnDoiMatKhau.UseVisualStyleBackColor = false;
+            btnDoiMatKhau.Click += btnDoiMatKhau_Click;
             // 
-            // DoiMatKhau
+            // frmDoiMatKhau
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(72, 73, 103);
-            ClientSize = new Size(613, 450);
+            ClientSize = new Size(766, 562);
             Controls.Add(btnThoat);
             Controls.Add(btnDoiMatKhau);
             Controls.Add(pictureBox1);
@@ -184,7 +198,8 @@
             Controls.Add(lblMatKhauCu);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "DoiMatKhau";
+            Margin = new Padding(4);
+            Name = "frmDoiMatKhau";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "DoiMatKhau";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

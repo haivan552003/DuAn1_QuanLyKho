@@ -94,19 +94,21 @@
             tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 46.5753441F));
             tableLayoutPanel1.Controls.Add(btnClose, 0, 0);
             tableLayoutPanel1.Controls.Add(btnMinSize, 0, 0);
-            tableLayoutPanel1.Location = new Point(933, 3);
+            tableLayoutPanel1.Location = new Point(1166, 4);
+            tableLayoutPanel1.Margin = new Padding(4);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tableLayoutPanel1.Size = new Size(64, 25);
+            tableLayoutPanel1.Size = new Size(80, 31);
             tableLayoutPanel1.TabIndex = 2;
             // 
             // btnClose
             // 
             btnClose.Image = (Image)resources.GetObject("btnClose.Image");
-            btnClose.Location = new Point(37, 3);
+            btnClose.Location = new Point(46, 4);
+            btnClose.Margin = new Padding(4);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(20, 19);
+            btnClose.Size = new Size(25, 23);
             btnClose.SizeMode = PictureBoxSizeMode.StretchImage;
             btnClose.TabIndex = 8;
             btnClose.TabStop = false;
@@ -115,9 +117,10 @@
             // btnMinSize
             // 
             btnMinSize.Image = (Image)resources.GetObject("btnMinSize.Image");
-            btnMinSize.Location = new Point(3, 3);
+            btnMinSize.Location = new Point(4, 4);
+            btnMinSize.Margin = new Padding(4);
             btnMinSize.Name = "btnMinSize";
-            btnMinSize.Size = new Size(25, 19);
+            btnMinSize.Size = new Size(31, 23);
             btnMinSize.SizeMode = PictureBoxSizeMode.StretchImage;
             btnMinSize.TabIndex = 6;
             btnMinSize.TabStop = false;
@@ -127,9 +130,10 @@
             // 
             imgMenu.Dock = DockStyle.Right;
             imgMenu.Image = (Image)resources.GetObject("imgMenu.Image");
-            imgMenu.Location = new Point(15, 3);
+            imgMenu.Location = new Point(19, 4);
+            imgMenu.Margin = new Padding(4);
             imgMenu.Name = "imgMenu";
-            imgMenu.Size = new Size(29, 34);
+            imgMenu.Size = new Size(36, 42);
             imgMenu.SizeMode = PictureBoxSizeMode.StretchImage;
             imgMenu.TabIndex = 5;
             imgMenu.TabStop = false;
@@ -148,9 +152,10 @@
             pnSidebar.Controls.Add(pnMenuMini);
             pnSidebar.Controls.Add(pnDangxuat);
             pnSidebar.Dock = DockStyle.Left;
-            pnSidebar.Location = new Point(0, 40);
+            pnSidebar.Location = new Point(0, 50);
+            pnSidebar.Margin = new Padding(4);
             pnSidebar.Name = "pnSidebar";
-            pnSidebar.Size = new Size(180, 660);
+            pnSidebar.Size = new Size(225, 825);
             pnSidebar.TabIndex = 1;
             // 
             // pnNguoiDung
@@ -159,17 +164,19 @@
             pnNguoiDung.Controls.Add(linkLabel1);
             pnNguoiDung.Controls.Add(lblTenND);
             pnNguoiDung.Dock = DockStyle.Top;
-            pnNguoiDung.Location = new Point(3, 3);
+            pnNguoiDung.Location = new Point(4, 4);
+            pnNguoiDung.Margin = new Padding(4);
             pnNguoiDung.Name = "pnNguoiDung";
-            pnNguoiDung.Size = new Size(180, 180);
+            pnNguoiDung.Size = new Size(225, 225);
             pnNguoiDung.TabIndex = 0;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(37, 3);
+            pictureBox1.Location = new Point(46, 4);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(98, 96);
+            pictureBox1.Size = new Size(122, 120);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -178,28 +185,33 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.LinkColor = Color.FromArgb(192, 192, 255);
-            linkLabel1.Location = new Point(33, 144);
+            linkLabel1.Location = new Point(41, 180);
+            linkLabel1.Margin = new Padding(4, 0, 4, 0);
             linkLabel1.Name = "linkLabel1";
-            linkLabel1.Size = new Size(98, 20);
+            linkLabel1.Size = new Size(119, 25);
             linkLabel1.TabIndex = 2;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Đổi mật khẩu";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // lblTenND
             // 
             lblTenND.AutoSize = true;
-            lblTenND.Location = new Point(3, 115);
+            lblTenND.ForeColor = Color.White;
+            lblTenND.Location = new Point(4, 144);
+            lblTenND.Margin = new Padding(4, 0, 4, 0);
             lblTenND.Name = "lblTenND";
-            lblTenND.Size = new Size(111, 20);
+            lblTenND.Size = new Size(136, 25);
             lblTenND.TabIndex = 1;
             lblTenND.Text = "tên người dùng";
             // 
             // pnTrangChu
             // 
             pnTrangChu.Controls.Add(btnTrangChu);
-            pnTrangChu.Location = new Point(3, 189);
+            pnTrangChu.Location = new Point(4, 237);
+            pnTrangChu.Margin = new Padding(4);
             pnTrangChu.Name = "pnTrangChu";
-            pnTrangChu.Size = new Size(180, 40);
+            pnTrangChu.Size = new Size(225, 50);
             pnTrangChu.TabIndex = 3;
             // 
             // btnTrangChu
@@ -212,9 +224,10 @@
             btnTrangChu.Image = (Image)resources.GetObject("btnTrangChu.Image");
             btnTrangChu.ImageAlign = ContentAlignment.MiddleLeft;
             btnTrangChu.Location = new Point(0, 0);
+            btnTrangChu.Margin = new Padding(4);
             btnTrangChu.Name = "btnTrangChu";
-            btnTrangChu.Padding = new Padding(10, 0, 0, 0);
-            btnTrangChu.Size = new Size(180, 30);
+            btnTrangChu.Padding = new Padding(12, 0, 0, 0);
+            btnTrangChu.Size = new Size(225, 38);
             btnTrangChu.TabIndex = 0;
             btnTrangChu.Text = "        Trang chủ";
             btnTrangChu.TextAlign = ContentAlignment.MiddleLeft;
@@ -224,9 +237,10 @@
             // pnNhanvien
             // 
             pnNhanvien.Controls.Add(btnNhanVien);
-            pnNhanvien.Location = new Point(3, 235);
+            pnNhanvien.Location = new Point(4, 295);
+            pnNhanvien.Margin = new Padding(4);
             pnNhanvien.Name = "pnNhanvien";
-            pnNhanvien.Size = new Size(180, 40);
+            pnNhanvien.Size = new Size(225, 50);
             pnNhanvien.TabIndex = 4;
             // 
             // btnNhanVien
@@ -239,9 +253,10 @@
             btnNhanVien.Image = (Image)resources.GetObject("btnNhanVien.Image");
             btnNhanVien.ImageAlign = ContentAlignment.MiddleLeft;
             btnNhanVien.Location = new Point(0, 0);
+            btnNhanVien.Margin = new Padding(4);
             btnNhanVien.Name = "btnNhanVien";
-            btnNhanVien.Padding = new Padding(10, 0, 0, 0);
-            btnNhanVien.Size = new Size(180, 30);
+            btnNhanVien.Padding = new Padding(12, 0, 0, 0);
+            btnNhanVien.Size = new Size(225, 38);
             btnNhanVien.TabIndex = 0;
             btnNhanVien.Text = "        Nhân viên";
             btnNhanVien.TextAlign = ContentAlignment.MiddleLeft;
@@ -253,9 +268,10 @@
             pnDanhMucSanpham.Controls.Add(btnDanhMuc);
             pnDanhMucSanpham.Controls.Add(btnSanPham);
             pnDanhMucSanpham.Controls.Add(btnDanhMucSP);
-            pnDanhMucSanpham.Location = new Point(3, 281);
+            pnDanhMucSanpham.Location = new Point(4, 353);
+            pnDanhMucSanpham.Margin = new Padding(4);
             pnDanhMucSanpham.Name = "pnDanhMucSanpham";
-            pnDanhMucSanpham.Size = new Size(180, 40);
+            pnDanhMucSanpham.Size = new Size(225, 50);
             pnDanhMucSanpham.TabIndex = 4;
             // 
             // btnDanhMuc
@@ -267,10 +283,11 @@
             btnDanhMuc.ForeColor = Color.White;
             btnDanhMuc.Image = (Image)resources.GetObject("btnDanhMuc.Image");
             btnDanhMuc.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDanhMuc.Location = new Point(0, 90);
+            btnDanhMuc.Location = new Point(0, 112);
+            btnDanhMuc.Margin = new Padding(4);
             btnDanhMuc.Name = "btnDanhMuc";
-            btnDanhMuc.Padding = new Padding(10, 0, 0, 0);
-            btnDanhMuc.Size = new Size(180, 30);
+            btnDanhMuc.Padding = new Padding(12, 0, 0, 0);
+            btnDanhMuc.Size = new Size(225, 38);
             btnDanhMuc.TabIndex = 0;
             btnDanhMuc.Text = "        Danh Mục";
             btnDanhMuc.TextAlign = ContentAlignment.MiddleLeft;
@@ -285,10 +302,11 @@
             btnSanPham.ForeColor = Color.White;
             btnSanPham.Image = (Image)resources.GetObject("btnSanPham.Image");
             btnSanPham.ImageAlign = ContentAlignment.MiddleLeft;
-            btnSanPham.Location = new Point(0, 45);
+            btnSanPham.Location = new Point(0, 56);
+            btnSanPham.Margin = new Padding(4);
             btnSanPham.Name = "btnSanPham";
-            btnSanPham.Padding = new Padding(10, 0, 0, 0);
-            btnSanPham.Size = new Size(180, 30);
+            btnSanPham.Padding = new Padding(12, 0, 0, 0);
+            btnSanPham.Size = new Size(225, 38);
             btnSanPham.TabIndex = 0;
             btnSanPham.Text = "        Sản Phẩm";
             btnSanPham.TextAlign = ContentAlignment.MiddleLeft;
@@ -304,9 +322,10 @@
             btnDanhMucSP.Image = (Image)resources.GetObject("btnDanhMucSP.Image");
             btnDanhMucSP.ImageAlign = ContentAlignment.MiddleLeft;
             btnDanhMucSP.Location = new Point(0, 0);
+            btnDanhMucSP.Margin = new Padding(4);
             btnDanhMucSP.Name = "btnDanhMucSP";
-            btnDanhMucSP.Padding = new Padding(10, 0, 0, 0);
-            btnDanhMucSP.Size = new Size(180, 30);
+            btnDanhMucSP.Padding = new Padding(12, 0, 0, 0);
+            btnDanhMucSP.Size = new Size(225, 38);
             btnDanhMucSP.TabIndex = 0;
             btnDanhMucSP.Text = "        Sản Phẩm";
             btnDanhMucSP.TextAlign = ContentAlignment.MiddleLeft;
@@ -316,9 +335,10 @@
             // pnKhachhang
             // 
             pnKhachhang.Controls.Add(btnKhachHang);
-            pnKhachhang.Location = new Point(3, 327);
+            pnKhachhang.Location = new Point(4, 411);
+            pnKhachhang.Margin = new Padding(4);
             pnKhachhang.Name = "pnKhachhang";
-            pnKhachhang.Size = new Size(180, 40);
+            pnKhachhang.Size = new Size(225, 50);
             pnKhachhang.TabIndex = 4;
             // 
             // btnKhachHang
@@ -331,9 +351,10 @@
             btnKhachHang.Image = (Image)resources.GetObject("btnKhachHang.Image");
             btnKhachHang.ImageAlign = ContentAlignment.MiddleLeft;
             btnKhachHang.Location = new Point(0, 0);
+            btnKhachHang.Margin = new Padding(4);
             btnKhachHang.Name = "btnKhachHang";
-            btnKhachHang.Padding = new Padding(10, 0, 0, 0);
-            btnKhachHang.Size = new Size(180, 30);
+            btnKhachHang.Padding = new Padding(12, 0, 0, 0);
+            btnKhachHang.Size = new Size(225, 38);
             btnKhachHang.TabIndex = 0;
             btnKhachHang.Text = "        Khách hàng";
             btnKhachHang.TextAlign = ContentAlignment.MiddleLeft;
@@ -343,9 +364,10 @@
             // pnNhacungcap
             // 
             pnNhacungcap.Controls.Add(btnNhaCungCap);
-            pnNhacungcap.Location = new Point(3, 373);
+            pnNhacungcap.Location = new Point(4, 469);
+            pnNhacungcap.Margin = new Padding(4);
             pnNhacungcap.Name = "pnNhacungcap";
-            pnNhacungcap.Size = new Size(180, 40);
+            pnNhacungcap.Size = new Size(225, 50);
             pnNhacungcap.TabIndex = 4;
             // 
             // btnNhaCungCap
@@ -358,9 +380,10 @@
             btnNhaCungCap.Image = (Image)resources.GetObject("btnNhaCungCap.Image");
             btnNhaCungCap.ImageAlign = ContentAlignment.MiddleLeft;
             btnNhaCungCap.Location = new Point(0, 0);
+            btnNhaCungCap.Margin = new Padding(4);
             btnNhaCungCap.Name = "btnNhaCungCap";
-            btnNhaCungCap.Padding = new Padding(10, 0, 0, 0);
-            btnNhaCungCap.Size = new Size(180, 30);
+            btnNhaCungCap.Padding = new Padding(12, 0, 0, 0);
+            btnNhaCungCap.Size = new Size(225, 38);
             btnNhaCungCap.TabIndex = 0;
             btnNhaCungCap.Text = "        Nhà cung cấp";
             btnNhaCungCap.TextAlign = ContentAlignment.MiddleLeft;
@@ -373,9 +396,10 @@
             pnPhieu.Controls.Add(btnPhieuNhap);
             pnPhieu.Controls.Add(btnHoaDon);
             pnPhieu.Controls.Add(btnPhieu);
-            pnPhieu.Location = new Point(3, 419);
+            pnPhieu.Location = new Point(4, 527);
+            pnPhieu.Margin = new Padding(4);
             pnPhieu.Name = "pnPhieu";
-            pnPhieu.Size = new Size(180, 40);
+            pnPhieu.Size = new Size(225, 50);
             pnPhieu.TabIndex = 4;
             // 
             // btnPhieuXuat
@@ -387,10 +411,11 @@
             btnPhieuXuat.ForeColor = Color.White;
             btnPhieuXuat.Image = (Image)resources.GetObject("btnPhieuXuat.Image");
             btnPhieuXuat.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPhieuXuat.Location = new Point(0, 138);
+            btnPhieuXuat.Location = new Point(0, 172);
+            btnPhieuXuat.Margin = new Padding(4);
             btnPhieuXuat.Name = "btnPhieuXuat";
-            btnPhieuXuat.Padding = new Padding(10, 0, 0, 0);
-            btnPhieuXuat.Size = new Size(180, 30);
+            btnPhieuXuat.Padding = new Padding(12, 0, 0, 0);
+            btnPhieuXuat.Size = new Size(225, 38);
             btnPhieuXuat.TabIndex = 0;
             btnPhieuXuat.Text = "        Phiếu Xuất";
             btnPhieuXuat.TextAlign = ContentAlignment.MiddleLeft;
@@ -406,10 +431,11 @@
             btnPhieuNhap.ForeColor = Color.White;
             btnPhieuNhap.Image = (Image)resources.GetObject("btnPhieuNhap.Image");
             btnPhieuNhap.ImageAlign = ContentAlignment.MiddleLeft;
-            btnPhieuNhap.Location = new Point(0, 93);
+            btnPhieuNhap.Location = new Point(0, 116);
+            btnPhieuNhap.Margin = new Padding(4);
             btnPhieuNhap.Name = "btnPhieuNhap";
-            btnPhieuNhap.Padding = new Padding(10, 0, 0, 0);
-            btnPhieuNhap.Size = new Size(180, 30);
+            btnPhieuNhap.Padding = new Padding(12, 0, 0, 0);
+            btnPhieuNhap.Size = new Size(225, 38);
             btnPhieuNhap.TabIndex = 0;
             btnPhieuNhap.Text = "        Phiếu Nhập";
             btnPhieuNhap.TextAlign = ContentAlignment.MiddleLeft;
@@ -425,10 +451,11 @@
             btnHoaDon.ForeColor = Color.White;
             btnHoaDon.Image = (Image)resources.GetObject("btnHoaDon.Image");
             btnHoaDon.ImageAlign = ContentAlignment.MiddleLeft;
-            btnHoaDon.Location = new Point(0, 46);
+            btnHoaDon.Location = new Point(0, 58);
+            btnHoaDon.Margin = new Padding(4);
             btnHoaDon.Name = "btnHoaDon";
-            btnHoaDon.Padding = new Padding(10, 0, 0, 0);
-            btnHoaDon.Size = new Size(180, 30);
+            btnHoaDon.Padding = new Padding(12, 0, 0, 0);
+            btnHoaDon.Size = new Size(225, 38);
             btnHoaDon.TabIndex = 0;
             btnHoaDon.Text = "        Hóa đơn";
             btnHoaDon.TextAlign = ContentAlignment.MiddleLeft;
@@ -445,9 +472,10 @@
             btnPhieu.Image = (Image)resources.GetObject("btnPhieu.Image");
             btnPhieu.ImageAlign = ContentAlignment.MiddleLeft;
             btnPhieu.Location = new Point(0, 0);
+            btnPhieu.Margin = new Padding(4);
             btnPhieu.Name = "btnPhieu";
-            btnPhieu.Padding = new Padding(10, 0, 0, 0);
-            btnPhieu.Size = new Size(180, 30);
+            btnPhieu.Padding = new Padding(12, 0, 0, 0);
+            btnPhieu.Size = new Size(225, 38);
             btnPhieu.TabIndex = 0;
             btnPhieu.Text = "        Phiếu";
             btnPhieu.TextAlign = ContentAlignment.MiddleLeft;
@@ -459,9 +487,10 @@
             pnMenuMini.Controls.Add(btnDoanhThu);
             pnMenuMini.Controls.Add(btnChiTieu);
             pnMenuMini.Controls.Add(btnThongKe);
-            pnMenuMini.Location = new Point(3, 465);
+            pnMenuMini.Location = new Point(4, 585);
+            pnMenuMini.Margin = new Padding(4);
             pnMenuMini.Name = "pnMenuMini";
-            pnMenuMini.Size = new Size(180, 40);
+            pnMenuMini.Size = new Size(225, 50);
             pnMenuMini.TabIndex = 4;
             // 
             // btnDoanhThu
@@ -473,10 +502,11 @@
             btnDoanhThu.ForeColor = Color.White;
             btnDoanhThu.Image = (Image)resources.GetObject("btnDoanhThu.Image");
             btnDoanhThu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnDoanhThu.Location = new Point(0, 87);
+            btnDoanhThu.Location = new Point(0, 109);
+            btnDoanhThu.Margin = new Padding(4);
             btnDoanhThu.Name = "btnDoanhThu";
-            btnDoanhThu.Padding = new Padding(10, 0, 0, 0);
-            btnDoanhThu.Size = new Size(180, 30);
+            btnDoanhThu.Padding = new Padding(12, 0, 0, 0);
+            btnDoanhThu.Size = new Size(225, 38);
             btnDoanhThu.TabIndex = 0;
             btnDoanhThu.Text = "        Doanh thu";
             btnDoanhThu.TextAlign = ContentAlignment.MiddleLeft;
@@ -492,10 +522,11 @@
             btnChiTieu.ForeColor = Color.White;
             btnChiTieu.Image = (Image)resources.GetObject("btnChiTieu.Image");
             btnChiTieu.ImageAlign = ContentAlignment.MiddleLeft;
-            btnChiTieu.Location = new Point(0, 44);
+            btnChiTieu.Location = new Point(0, 55);
+            btnChiTieu.Margin = new Padding(4);
             btnChiTieu.Name = "btnChiTieu";
-            btnChiTieu.Padding = new Padding(10, 0, 0, 0);
-            btnChiTieu.Size = new Size(180, 30);
+            btnChiTieu.Padding = new Padding(12, 0, 0, 0);
+            btnChiTieu.Size = new Size(225, 38);
             btnChiTieu.TabIndex = 0;
             btnChiTieu.Text = "        Chi tiêu";
             btnChiTieu.TextAlign = ContentAlignment.MiddleLeft;
@@ -512,9 +543,10 @@
             btnThongKe.Image = (Image)resources.GetObject("btnThongKe.Image");
             btnThongKe.ImageAlign = ContentAlignment.MiddleLeft;
             btnThongKe.Location = new Point(0, 0);
+            btnThongKe.Margin = new Padding(4);
             btnThongKe.Name = "btnThongKe";
-            btnThongKe.Padding = new Padding(10, 0, 0, 0);
-            btnThongKe.Size = new Size(180, 30);
+            btnThongKe.Padding = new Padding(12, 0, 0, 0);
+            btnThongKe.Size = new Size(225, 38);
             btnThongKe.TabIndex = 0;
             btnThongKe.Text = "        Thống kê";
             btnThongKe.TextAlign = ContentAlignment.MiddleLeft;
@@ -524,9 +556,10 @@
             // pnDangxuat
             // 
             pnDangxuat.Controls.Add(btnDangXuat);
-            pnDangxuat.Location = new Point(3, 511);
+            pnDangxuat.Location = new Point(4, 643);
+            pnDangxuat.Margin = new Padding(4);
             pnDangxuat.Name = "pnDangxuat";
-            pnDangxuat.Size = new Size(180, 40);
+            pnDangxuat.Size = new Size(225, 50);
             pnDangxuat.TabIndex = 4;
             // 
             // btnDangXuat
@@ -539,9 +572,10 @@
             btnDangXuat.Image = (Image)resources.GetObject("btnDangXuat.Image");
             btnDangXuat.ImageAlign = ContentAlignment.MiddleLeft;
             btnDangXuat.Location = new Point(0, 0);
+            btnDangXuat.Margin = new Padding(4);
             btnDangXuat.Name = "btnDangXuat";
-            btnDangXuat.Padding = new Padding(10, 0, 0, 0);
-            btnDangXuat.Size = new Size(180, 30);
+            btnDangXuat.Padding = new Padding(12, 0, 0, 0);
+            btnDangXuat.Size = new Size(225, 38);
             btnDangXuat.TabIndex = 0;
             btnDangXuat.Text = "        Đăng xuất";
             btnDangXuat.TextAlign = ContentAlignment.MiddleLeft;
@@ -563,26 +597,28 @@
             pnMenu.Controls.Add(tableLayoutPanel2);
             pnMenu.Dock = DockStyle.Top;
             pnMenu.Location = new Point(0, 0);
+            pnMenu.Margin = new Padding(4);
             pnMenu.Name = "pnMenu";
-            pnMenu.Size = new Size(1000, 40);
+            pnMenu.Size = new Size(1250, 50);
             pnMenu.TabIndex = 0;
             // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.BackColor = Color.FromArgb(36, 40, 77);
             tableLayoutPanel2.ColumnCount = 3;
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 47F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 59F));
             tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 70F));
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 88F));
             tableLayoutPanel2.Controls.Add(tableLayoutPanel1, 2, 0);
             tableLayoutPanel2.Controls.Add(label2, 1, 0);
             tableLayoutPanel2.Controls.Add(imgMenu, 0, 0);
             tableLayoutPanel2.Dock = DockStyle.Top;
             tableLayoutPanel2.Location = new Point(0, 0);
+            tableLayoutPanel2.Margin = new Padding(4);
             tableLayoutPanel2.Name = "tableLayoutPanel2";
             tableLayoutPanel2.RowCount = 1;
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel2.Size = new Size(1000, 40);
+            tableLayoutPanel2.Size = new Size(1250, 50);
             tableLayoutPanel2.TabIndex = 0;
             // 
             // label2
@@ -590,10 +626,11 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(50, 0);
+            label2.Location = new Point(63, 0);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Padding = new Padding(0, 5, 0, 0);
-            label2.Size = new Size(246, 30);
+            label2.Padding = new Padding(0, 6, 0, 0);
+            label2.Size = new Size(295, 36);
             label2.TabIndex = 6;
             label2.Text = "Vật liệu xây dựng Đông Anh";
             label2.TextAlign = ContentAlignment.MiddleLeft;
@@ -605,15 +642,16 @@
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(170, 160, 160);
-            ClientSize = new Size(1000, 700);
+            ClientSize = new Size(1250, 875);
             Controls.Add(pnSidebar);
             Controls.Add(pnMenu);
-            ForeColor = Color.White;
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             IsMdiContainer = true;
+            Margin = new Padding(4);
             Name = "frmMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";

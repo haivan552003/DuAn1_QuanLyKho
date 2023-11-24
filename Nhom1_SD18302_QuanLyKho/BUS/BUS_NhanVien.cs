@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using DTO;
 
 namespace BUS
 {
@@ -34,10 +35,49 @@ namespace BUS
                 return sb.ToString();
             }
         }
-
+        public bool updateNV(DTO_NhanVien nv)
+        {
+            return dalNV.updateNV(nv);
+        }
+        public bool insertNV(DTO_NhanVien nv)
+        {
+            return dalNV.insertNV(nv);
+        }
+        public DataTable getNhanVien()
+        {
+            return dalNV.getNV();
+        }
+        public DataTable getDoanhThu()
+        {
+            return dalNV.getDT();
+        }
         public DataTable VaiTroNhanVien(string email)
         {
             return dalNV.VaiTroNhanVien(email);
+        }
+        public bool deleteNV(string email)
+        {
+            return dalNV.deleteNV(email);
+        }
+        public DataTable SeachNV(string tenNV)
+        {
+            return dalNV.SeachNV(tenNV);
+        }
+        public bool UpdateMatKhau(string email, string matKhauCu, string matKhauMoi, string nhapLaimatKhauMoi)
+        {
+            return dalNV.UpdateMatKhau(email, matKhauCu, matKhauMoi, nhapLaimatKhauMoi);
+        }
+        public DataTable LocAZ()
+        {
+            return dalNV.locAZ();
+        }
+        public DataTable LocZA()
+        {
+            return dalNV.locZA();
+        }
+        public DataTable LocCV()
+        {
+            return dalNV.locCV();
         }
     }
 
