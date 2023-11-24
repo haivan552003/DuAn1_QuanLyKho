@@ -30,11 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHoaDon));
             pictureBox1 = new PictureBox();
-            comboBox1 = new ComboBox();
+            cboLoc = new ComboBox();
             label1 = new Label();
             dgvHoaDon = new DataGridView();
             lblMaHoaDon = new Label();
-            txtMaHoaDon = new TextBox();
             lblKhachHang = new Label();
             cboKhachHang = new ComboBox();
             lblHang = new Label();
@@ -43,15 +42,13 @@
             txtSoLuong = new TextBox();
             lblDonGia = new Label();
             txtDonGia = new TextBox();
-            dtpNgayGiao = new DateTimePicker();
-            dtpNgayBan = new DateTimePicker();
             lblNgayBan = new Label();
             lblNgayGiao = new Label();
             lblTienCoc = new Label();
             txtTienCoc = new TextBox();
             txtThanhTien = new TextBox();
             lblThanhTien = new Label();
-            textBox6 = new TextBox();
+            txtTim = new TextBox();
             pictureBox2 = new PictureBox();
             btnXuatExcel = new Button();
             btnNhapExcel = new Button();
@@ -60,6 +57,11 @@
             btn_xoaPX = new Button();
             btn_capnhatPX = new Button();
             btn_themPX = new Button();
+            label2 = new Label();
+            cboNhanVien = new ComboBox();
+            cboMaHD = new ComboBox();
+            dtpNgayBan = new DateTimePicker();
+            dtpNgayGiao = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvHoaDon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -75,13 +77,15 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // comboBox1
+            // cboLoc
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(12, 77);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 1;
+            cboLoc.FormattingEnabled = true;
+            cboLoc.Items.AddRange(new object[] { "A - Z", "Z - A" });
+            cboLoc.Location = new Point(12, 77);
+            cboLoc.Name = "cboLoc";
+            cboLoc.Size = new Size(151, 28);
+            cboLoc.TabIndex = 1;
+            cboLoc.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -103,6 +107,7 @@
             dgvHoaDon.RowTemplate.Height = 29;
             dgvHoaDon.Size = new Size(796, 321);
             dgvHoaDon.TabIndex = 3;
+            dgvHoaDon.CellClick += dgvHoaDon_CellClick;
             // 
             // lblMaHoaDon
             // 
@@ -114,13 +119,6 @@
             lblMaHoaDon.Size = new Size(108, 23);
             lblMaHoaDon.TabIndex = 4;
             lblMaHoaDon.Text = "Mã hóa đơn:";
-            // 
-            // txtMaHoaDon
-            // 
-            txtMaHoaDon.Location = new Point(150, 438);
-            txtMaHoaDon.Name = "txtMaHoaDon";
-            txtMaHoaDon.Size = new Size(250, 27);
-            txtMaHoaDon.TabIndex = 5;
             // 
             // lblKhachHang
             // 
@@ -159,13 +157,14 @@
             cboHang.Name = "cboHang";
             cboHang.Size = new Size(250, 28);
             cboHang.TabIndex = 9;
+            cboHang.SelectedIndexChanged += cboHang_SelectedIndexChanged;
             // 
             // lblSoLuong
             // 
             lblSoLuong.AutoSize = true;
             lblSoLuong.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblSoLuong.ForeColor = Color.White;
-            lblSoLuong.Location = new Point(28, 542);
+            lblSoLuong.Location = new Point(28, 576);
             lblSoLuong.Name = "lblSoLuong";
             lblSoLuong.Size = new Size(83, 23);
             lblSoLuong.TabIndex = 10;
@@ -173,7 +172,7 @@
             // 
             // txtSoLuong
             // 
-            txtSoLuong.Location = new Point(150, 538);
+            txtSoLuong.Location = new Point(150, 572);
             txtSoLuong.Name = "txtSoLuong";
             txtSoLuong.Size = new Size(250, 27);
             txtSoLuong.TabIndex = 11;
@@ -183,7 +182,7 @@
             lblDonGia.AutoSize = true;
             lblDonGia.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblDonGia.ForeColor = Color.White;
-            lblDonGia.Location = new Point(28, 575);
+            lblDonGia.Location = new Point(441, 509);
             lblDonGia.Name = "lblDonGia";
             lblDonGia.Size = new Size(74, 23);
             lblDonGia.TabIndex = 12;
@@ -191,24 +190,11 @@
             // 
             // txtDonGia
             // 
-            txtDonGia.Location = new Point(150, 571);
+            txtDonGia.Enabled = false;
+            txtDonGia.Location = new Point(538, 503);
             txtDonGia.Name = "txtDonGia";
             txtDonGia.Size = new Size(250, 27);
             txtDonGia.TabIndex = 13;
-            // 
-            // dtpNgayGiao
-            // 
-            dtpNgayGiao.Location = new Point(538, 470);
-            dtpNgayGiao.Name = "dtpNgayGiao";
-            dtpNgayGiao.Size = new Size(250, 27);
-            dtpNgayGiao.TabIndex = 15;
-            // 
-            // dtpNgayBan
-            // 
-            dtpNgayBan.Location = new Point(538, 439);
-            dtpNgayBan.Name = "dtpNgayBan";
-            dtpNgayBan.Size = new Size(250, 27);
-            dtpNgayBan.TabIndex = 16;
             // 
             // lblNgayBan
             // 
@@ -237,7 +223,7 @@
             lblTienCoc.AutoSize = true;
             lblTienCoc.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lblTienCoc.ForeColor = Color.White;
-            lblTienCoc.Location = new Point(439, 507);
+            lblTienCoc.Location = new Point(438, 542);
             lblTienCoc.Name = "lblTienCoc";
             lblTienCoc.Size = new Size(77, 23);
             lblTienCoc.TabIndex = 19;
@@ -245,14 +231,16 @@
             // 
             // txtTienCoc
             // 
-            txtTienCoc.Location = new Point(539, 503);
+            txtTienCoc.Location = new Point(538, 538);
             txtTienCoc.Name = "txtTienCoc";
             txtTienCoc.Size = new Size(250, 27);
             txtTienCoc.TabIndex = 20;
+            txtTienCoc.Text = "0";
             // 
             // txtThanhTien
             // 
-            txtThanhTien.Location = new Point(538, 538);
+            txtThanhTien.Enabled = false;
+            txtThanhTien.Location = new Point(537, 573);
             txtThanhTien.Name = "txtThanhTien";
             txtThanhTien.Size = new Size(251, 27);
             txtThanhTien.TabIndex = 21;
@@ -261,19 +249,20 @@
             // 
             lblThanhTien.AutoSize = true;
             lblThanhTien.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblThanhTien.ForeColor = Color.White;
-            lblThanhTien.Location = new Point(439, 542);
+            lblThanhTien.ForeColor = Color.DarkRed;
+            lblThanhTien.Location = new Point(438, 577);
             lblThanhTien.Name = "lblThanhTien";
             lblThanhTien.Size = new Size(96, 23);
             lblThanhTien.TabIndex = 22;
             lblThanhTien.Text = "Thành tiền:";
+            lblThanhTien.Click += lblThanhTien_Click;
             // 
-            // textBox6
+            // txtTim
             // 
-            textBox6.Location = new Point(237, 76);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(310, 27);
-            textBox6.TabIndex = 28;
+            txtTim.Location = new Point(237, 76);
+            txtTim.Name = "txtTim";
+            txtTim.Size = new Size(310, 27);
+            txtTim.TabIndex = 28;
             // 
             // pictureBox2
             // 
@@ -284,6 +273,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 29;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // btnXuatExcel
             // 
@@ -356,6 +346,7 @@
             btn_xoaPX.Text = "Xóa";
             btn_xoaPX.TextAlign = ContentAlignment.MiddleRight;
             btn_xoaPX.UseVisualStyleBackColor = false;
+            btn_xoaPX.Click += btn_xoaPX_Click;
             // 
             // btn_capnhatPX
             // 
@@ -371,6 +362,7 @@
             btn_capnhatPX.Text = "Cập nhập";
             btn_capnhatPX.TextAlign = ContentAlignment.MiddleRight;
             btn_capnhatPX.UseVisualStyleBackColor = false;
+            btn_capnhatPX.Click += btn_capnhatPX_Click;
             // 
             // btn_themPX
             // 
@@ -387,6 +379,56 @@
             btn_themPX.Text = "Thêm";
             btn_themPX.TextAlign = ContentAlignment.MiddleRight;
             btn_themPX.UseVisualStyleBackColor = false;
+            btn_themPX.Click += btn_themPX_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(28, 542);
+            label2.Name = "label2";
+            label2.Size = new Size(93, 23);
+            label2.TabIndex = 8;
+            label2.Text = "Nhân viên:";
+            // 
+            // cboNhanVien
+            // 
+            cboNhanVien.FormattingEnabled = true;
+            cboNhanVien.Location = new Point(150, 537);
+            cboNhanVien.Name = "cboNhanVien";
+            cboNhanVien.Size = new Size(250, 28);
+            cboNhanVien.TabIndex = 9;
+            cboNhanVien.SelectedIndexChanged += cboHang_SelectedIndexChanged;
+            // 
+            // cboMaHD
+            // 
+            cboMaHD.FormattingEnabled = true;
+            cboMaHD.Location = new Point(150, 436);
+            cboMaHD.Name = "cboMaHD";
+            cboMaHD.Size = new Size(250, 28);
+            cboMaHD.TabIndex = 7;
+            cboMaHD.Click += cboMaHD_Click;
+            // 
+            // dtpNgayBan
+            // 
+            dtpNgayBan.CustomFormat = "dd/MM/yyyy";
+            dtpNgayBan.Format = DateTimePickerFormat.Custom;
+            dtpNgayBan.Location = new Point(538, 436);
+            dtpNgayBan.Name = "dtpNgayBan";
+            dtpNgayBan.Size = new Size(250, 27);
+            dtpNgayBan.TabIndex = 83;
+            dtpNgayBan.Value = new DateTime(2023, 11, 24, 0, 0, 0, 0);
+            // 
+            // dtpNgayGiao
+            // 
+            dtpNgayGiao.CustomFormat = "dd/MM/yyyy";
+            dtpNgayGiao.Format = DateTimePickerFormat.Custom;
+            dtpNgayGiao.Location = new Point(538, 470);
+            dtpNgayGiao.Name = "dtpNgayGiao";
+            dtpNgayGiao.Size = new Size(250, 27);
+            dtpNgayGiao.TabIndex = 83;
+            dtpNgayGiao.Value = new DateTime(2023, 11, 24, 0, 0, 0, 0);
             // 
             // frmHoaDon
             // 
@@ -394,6 +436,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(820, 660);
+            Controls.Add(dtpNgayGiao);
+            Controls.Add(dtpNgayBan);
             Controls.Add(btnXuatExcel);
             Controls.Add(btnNhapExcel);
             Controls.Add(btn_inPN);
@@ -402,33 +446,34 @@
             Controls.Add(btn_capnhatPX);
             Controls.Add(btn_themPX);
             Controls.Add(pictureBox2);
-            Controls.Add(textBox6);
+            Controls.Add(txtTim);
             Controls.Add(lblThanhTien);
             Controls.Add(txtThanhTien);
             Controls.Add(txtTienCoc);
             Controls.Add(lblTienCoc);
             Controls.Add(lblNgayGiao);
             Controls.Add(lblNgayBan);
-            Controls.Add(dtpNgayBan);
-            Controls.Add(dtpNgayGiao);
             Controls.Add(txtDonGia);
             Controls.Add(lblDonGia);
             Controls.Add(txtSoLuong);
             Controls.Add(lblSoLuong);
+            Controls.Add(cboNhanVien);
+            Controls.Add(label2);
             Controls.Add(cboHang);
             Controls.Add(lblHang);
+            Controls.Add(cboMaHD);
             Controls.Add(cboKhachHang);
             Controls.Add(lblKhachHang);
-            Controls.Add(txtMaHoaDon);
             Controls.Add(lblMaHoaDon);
             Controls.Add(dgvHoaDon);
             Controls.Add(label1);
-            Controls.Add(comboBox1);
+            Controls.Add(cboLoc);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmHoaDon";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HoaDon";
+            Load += frmHoaDon_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvHoaDon).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -439,11 +484,10 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private ComboBox comboBox1;
+        private ComboBox cboLoc;
         private Label label1;
         private DataGridView dgvHoaDon;
         private Label lblMaHoaDon;
-        private TextBox txtMaHoaDon;
         private Label lblKhachHang;
         private ComboBox cboKhachHang;
         private Label lblHang;
@@ -452,15 +496,13 @@
         private TextBox txtSoLuong;
         private Label lblDonGia;
         private TextBox txtDonGia;
-        private DateTimePicker dtpNgayGiao;
-        private DateTimePicker dtpNgayBan;
         private Label lblNgayBan;
         private Label lblNgayGiao;
         private Label lblTienCoc;
         private TextBox txtTienCoc;
         private TextBox txtThanhTien;
         private Label lblThanhTien;
-        private TextBox textBox6;
+        private TextBox txtTim;
         private PictureBox pictureBox2;
         private Button btnXuatExcel;
         private Button btnNhapExcel;
@@ -469,5 +511,10 @@
         private Button btn_xoaPX;
         private Button btn_capnhatPX;
         private Button btn_themPX;
+        private Label label2;
+        private ComboBox cboNhanVien;
+        private ComboBox cboMaHD;
+        private DateTimePicker dtpNgayBan;
+        private DateTimePicker dtpNgayGiao;
     }
 }
