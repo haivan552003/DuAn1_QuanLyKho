@@ -417,5 +417,45 @@ namespace DAL
             }
             finally { _conn.Close(); }
         }
+
+        public DataTable in_hd(string maHD)
+        {
+            try
+            {
+                _conn.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "[load_in_hd]";
+                cmd.Parameters.AddWithValue("@ma_hd", maHD);
+                cmd.Connection = _conn;
+                DataTable dtHD = new DataTable();
+                dtHD.Load(cmd.ExecuteReader());
+
+                return dtHD;
+            }
+            finally { _conn.Close(); }
+        }
+
+        public DataTable getThongTinKH(string maHD)
+        {
+            try
+            {
+                _conn.Open();
+
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "[thongtin_khachhang]";
+                cmd.Parameters.AddWithValue("@ma_hd", maHD);
+                cmd.Connection = _conn;
+                DataTable dtHD = new DataTable();
+                dtHD.Load(cmd.ExecuteReader());
+
+                return dtHD;
+            }
+            finally { _conn.Close(); }
+        }
     }
 }

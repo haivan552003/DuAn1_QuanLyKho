@@ -315,6 +315,7 @@
             btn_inPN.TabIndex = 79;
             btn_inPN.Text = "In";
             btn_inPN.UseVisualStyleBackColor = false;
+            btn_inPN.Click += btn_inPN_Click;
             // 
             // btn_lammoiPX
             // 

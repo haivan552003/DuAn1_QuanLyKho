@@ -5,12 +5,14 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace Nhom1_SD18302_QuanLyKho
@@ -389,6 +391,30 @@ namespace Nhom1_SD18302_QuanLyKho
             else
             {
                 dgvHoaDon.DataSource = busHD.loc_hd_z_a();
+            }
+        }
+
+        private void btn_inPN_Click(object sender, EventArgs e)
+        {
+            if(cboMaHD.SelectedValue != null)
+            {
+                frmInHoaDon frmIn = new frmInHoaDon();
+                frmIn.maHD = cboMaHD.SelectedValue.ToString();
+
+                DataTable dtThongTinKH = busHD.getThongTinKH(cboMaHD.SelectedValue.ToString());
+
+                object TenObj = dtThongTinKH.Rows[0][0].ToString();
+                object SdtObj = dtThongTinKH.Rows[0][2].ToString();
+                object DiaChiObj = dtThongTinKH.Rows[0][1].ToString();
+
+                frmIn.tenKH = Convert.ToString(TenObj);
+                frmIn.sdt = Convert.ToString(SdtObj);
+                frmIn.diaChi = Convert.ToString(DiaChiObj);
+                frmIn.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy mã hóa đơn", "Confirm", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

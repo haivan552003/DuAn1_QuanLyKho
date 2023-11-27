@@ -61,7 +61,6 @@ D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmNhaCungCap.resources
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmPhieuNhap.resources
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmPhieuXuat.resources
-D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.InHoaDon.resources
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmInPhieuNhap.resources
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmKhachHang.resources
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmThuChi.resources
@@ -85,3 +84,4 @@ D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.csproj.CopyComplete
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmHangHoa.resources
 D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmHoaDon.resources
+D:\FPoly\Du_an_1\DuAn1_QuanLyKho\Nhom1_SD18302_QuanLyKho\Nhom1_SD18302_QuanLyKho\obj\Debug\net6.0-windows\Nhom1_SD18302_QuanLyKho.frmInHoaDon.resources

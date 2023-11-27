@@ -83,5 +83,13 @@ namespace BUS
         {
             return dalHD.loc_hd_z_a();
         }
+        public DataTable in_hd(string maHD)
+        {
+            return dalHD.in_hd(maHD);
+        }
+        public DataTable getThongTinKH(string maHD)
+        {
+            return dalHD.getThongTinKH(maHD);
+        }
     }
 }
