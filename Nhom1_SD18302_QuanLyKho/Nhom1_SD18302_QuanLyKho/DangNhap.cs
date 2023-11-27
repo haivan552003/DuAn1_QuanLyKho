@@ -15,10 +15,13 @@ namespace Nhom1_SD18302_QuanLyKho
     public partial class frmDangNhap : Form
     {
         BUS_NhanVien busNV = new BUS.BUS_NhanVien();
-
+        int count = 0;
+        bool isHide = false;
         public frmDangNhap()
         {
             InitializeComponent();
+            btnHidePass.Image = imageList2.Images[0];
+            txtMatKhau.UseSystemPasswordChar = true;
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -56,6 +59,35 @@ namespace Nhom1_SD18302_QuanLyKho
             else
             {
                 MessageBox.Show("Không được bỏ trống", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (count < 4)
+            {
+                imgSlide.Image = imageList1.Images[count];
+                count++;
+            }
+            else
+            {
+                count = 0;
+            }
+        }
+
+        private void btnHidePass_Click(object sender, EventArgs e)
+        {
+            if (!isHide)
+            {
+                btnHidePass.Image = imageList2.Images[0];
+                txtMatKhau.UseSystemPasswordChar = false;
+                isHide = true;
+            }
+            else
+            {
+                btnHidePass.Image = imageList2.Images[1];
+                txtMatKhau.UseSystemPasswordChar = true;
+                isHide = false;
             }
         }
     }
