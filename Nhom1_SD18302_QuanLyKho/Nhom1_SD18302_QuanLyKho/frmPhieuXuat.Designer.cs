@@ -32,14 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPhieuXuat));
             sidebarTransition = new System.Windows.Forms.Timer(components);
             menuTransition = new System.Windows.Forms.Timer(components);
-            txt_mPX = new TextBox();
             lbl_mpx = new Label();
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
             txt_soLuong = new TextBox();
             label7 = new Label();
-            txt_ngayXuat = new TextBox();
             btn_lammoiPX = new Button();
             btn_xoaPX = new Button();
             btn_capnhatPX = new Button();
@@ -219,8 +217,10 @@
             dv_PX = new DataGridView();
             btnXuatExcel = new Button();
             btnNhapExcel = new Button();
-            cboMaKH = new ComboBox();
+            cboNguoiDung = new ComboBox();
             cboMaHang = new ComboBox();
+            dtp_ngayXuat = new DateTimePicker();
+            cbo_maPX = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             panel11.SuspendLayout();
             panel12.SuspendLayout();
@@ -290,20 +290,12 @@
             // 
             menuTransition.Interval = 10;
             // 
-            // txt_mPX
-            // 
-            txt_mPX.Location = new Point(162, 462);
-            txt_mPX.Name = "txt_mPX";
-            txt_mPX.Size = new Size(250, 27);
-            txt_mPX.TabIndex = 10;
-            txt_mPX.TextChanged += textBox2_TextChanged;
-            // 
             // lbl_mpx
             // 
             lbl_mpx.AutoSize = true;
             lbl_mpx.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_mpx.ForeColor = SystemColors.ButtonHighlight;
-            lbl_mpx.Location = new Point(16, 462);
+            lbl_mpx.Location = new Point(16, 461);
             lbl_mpx.Name = "lbl_mpx";
             lbl_mpx.Size = new Size(130, 23);
             lbl_mpx.TabIndex = 11;
@@ -316,9 +308,9 @@
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(16, 504);
             label4.Name = "label4";
-            label4.Size = new Size(137, 23);
+            label4.Size = new Size(140, 23);
             label4.TabIndex = 13;
-            label4.Text = "Mã khách hàng:";
+            label4.Text = "Mã người dùng:";
             // 
             // label5
             // 
@@ -336,16 +328,15 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ButtonHighlight;
-            label6.Location = new Point(437, 466);
+            label6.Location = new Point(437, 467);
             label6.Name = "label6";
             label6.Size = new Size(88, 23);
             label6.TabIndex = 17;
             label6.Text = "Số lượng:";
-            label6.Click += label6_Click;
             // 
             // txt_soLuong
             // 
-            txt_soLuong.Location = new Point(540, 462);
+            txt_soLuong.Location = new Point(539, 461);
             txt_soLuong.Name = "txt_soLuong";
             txt_soLuong.Size = new Size(250, 27);
             txt_soLuong.TabIndex = 16;
@@ -361,13 +352,6 @@
             label7.TabIndex = 19;
             label7.Text = "Ngày xuất:";
             // 
-            // txt_ngayXuat
-            // 
-            txt_ngayXuat.Location = new Point(540, 504);
-            txt_ngayXuat.Name = "txt_ngayXuat";
-            txt_ngayXuat.Size = new Size(250, 27);
-            txt_ngayXuat.TabIndex = 18;
-            // 
             // btn_lammoiPX
             // 
             btn_lammoiPX.BackColor = Color.FromArgb(134, 179, 209);
@@ -375,9 +359,9 @@
             btn_lammoiPX.ForeColor = Color.White;
             btn_lammoiPX.Image = (Image)resources.GetObject("btn_lammoiPX.Image");
             btn_lammoiPX.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_lammoiPX.Location = new Point(584, 586);
+            btn_lammoiPX.Location = new Point(584, 587);
             btn_lammoiPX.Name = "btn_lammoiPX";
-            btn_lammoiPX.Size = new Size(100, 45);
+            btn_lammoiPX.Size = new Size(101, 45);
             btn_lammoiPX.TabIndex = 23;
             btn_lammoiPX.Text = "Làm mới";
             btn_lammoiPX.TextAlign = ContentAlignment.MiddleRight;
@@ -390,14 +374,15 @@
             btn_xoaPX.ForeColor = Color.White;
             btn_xoaPX.Image = (Image)resources.GetObject("btn_xoaPX.Image");
             btn_xoaPX.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_xoaPX.Location = new Point(690, 586);
+            btn_xoaPX.Location = new Point(690, 587);
             btn_xoaPX.Name = "btn_xoaPX";
             btn_xoaPX.Padding = new Padding(5, 0, 5, 0);
-            btn_xoaPX.Size = new Size(100, 45);
+            btn_xoaPX.Size = new Size(101, 45);
             btn_xoaPX.TabIndex = 24;
             btn_xoaPX.Text = "Xóa";
             btn_xoaPX.TextAlign = ContentAlignment.MiddleRight;
             btn_xoaPX.UseVisualStyleBackColor = false;
+            btn_xoaPX.Click += btn_xoaPX_Click;
             // 
             // btn_capnhatPX
             // 
@@ -406,13 +391,14 @@
             btn_capnhatPX.ForeColor = Color.White;
             btn_capnhatPX.Image = (Image)resources.GetObject("btn_capnhatPX.Image");
             btn_capnhatPX.ImageAlign = ContentAlignment.MiddleLeft;
-            btn_capnhatPX.Location = new Point(228, 588);
+            btn_capnhatPX.Location = new Point(229, 588);
             btn_capnhatPX.Name = "btn_capnhatPX";
-            btn_capnhatPX.Size = new Size(100, 45);
+            btn_capnhatPX.Size = new Size(101, 45);
             btn_capnhatPX.TabIndex = 25;
             btn_capnhatPX.Text = "Cập nhập";
             btn_capnhatPX.TextAlign = ContentAlignment.MiddleRight;
             btn_capnhatPX.UseVisualStyleBackColor = false;
+            btn_capnhatPX.Click += btn_capnhatPX_Click;
             // 
             // btn_themPX
             // 
@@ -424,11 +410,12 @@
             btn_themPX.Location = new Point(122, 588);
             btn_themPX.Name = "btn_themPX";
             btn_themPX.Padding = new Padding(5, 0, 5, 0);
-            btn_themPX.Size = new Size(100, 45);
+            btn_themPX.Size = new Size(101, 45);
             btn_themPX.TabIndex = 26;
             btn_themPX.Text = "Thêm";
             btn_themPX.TextAlign = ContentAlignment.MiddleRight;
             btn_themPX.UseVisualStyleBackColor = false;
+            btn_themPX.Click += btn_themPX_Click;
             // 
             // label8
             // 
@@ -451,7 +438,7 @@
             btn_inPN.Location = new Point(16, 588);
             btn_inPN.Name = "btn_inPN";
             btn_inPN.Padding = new Padding(5, 0, 5, 0);
-            btn_inPN.Size = new Size(100, 45);
+            btn_inPN.Size = new Size(101, 45);
             btn_inPN.TabIndex = 27;
             btn_inPN.Text = "In";
             btn_inPN.UseVisualStyleBackColor = false;
@@ -2377,16 +2364,17 @@
             // ptb_timPX
             // 
             ptb_timPX.Image = (Image)resources.GetObject("ptb_timPX.Image");
-            ptb_timPX.Location = new Point(576, 70);
+            ptb_timPX.Location = new Point(576, 69);
             ptb_timPX.Name = "ptb_timPX";
-            ptb_timPX.Size = new Size(30, 30);
+            ptb_timPX.Size = new Size(30, 29);
             ptb_timPX.TabIndex = 64;
             ptb_timPX.TabStop = false;
+            ptb_timPX.Click += ptb_timPX_Click;
             // 
             // txt_timPX
             // 
             txt_timPX.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_timPX.Location = new Point(260, 70);
+            txt_timPX.Location = new Point(261, 69);
             txt_timPX.Name = "txt_timPX";
             txt_timPX.Size = new Size(310, 27);
             txt_timPX.TabIndex = 63;
@@ -2395,10 +2383,12 @@
             // 
             cbx_locPX.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cbx_locPX.FormattingEnabled = true;
+            cbx_locPX.Items.AddRange(new object[] { "Hàng", "Tên Hàng" });
             cbx_locPX.Location = new Point(10, 69);
             cbx_locPX.Name = "cbx_locPX";
             cbx_locPX.Size = new Size(150, 28);
             cbx_locPX.TabIndex = 62;
+            cbx_locPX.SelectedIndexChanged += cbx_locPX_SelectedIndexChanged;
             // 
             // pictureBox3
             // 
@@ -2406,7 +2396,7 @@
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(10, 9);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(150, 50);
+            pictureBox3.Size = new Size(150, 51);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 61;
             pictureBox3.TabStop = false;
@@ -2426,12 +2416,13 @@
             // dv_PX
             // 
             dv_PX.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dv_PX.Location = new Point(12, 109);
+            dv_PX.Location = new Point(11, 109);
             dv_PX.Name = "dv_PX";
             dv_PX.RowHeadersWidth = 51;
             dv_PX.RowTemplate.Height = 29;
-            dv_PX.Size = new Size(796, 336);
+            dv_PX.Size = new Size(795, 336);
             dv_PX.TabIndex = 59;
+            dv_PX.CellContentClick += dv_PX_CellContentClick;
             // 
             // btnXuatExcel
             // 
@@ -2441,7 +2432,7 @@
             btnXuatExcel.ImageAlign = ContentAlignment.MiddleLeft;
             btnXuatExcel.Location = new Point(443, 588);
             btnXuatExcel.Name = "btnXuatExcel";
-            btnXuatExcel.Size = new Size(100, 45);
+            btnXuatExcel.Size = new Size(101, 45);
             btnXuatExcel.TabIndex = 73;
             btnXuatExcel.Text = "Xuất Excel";
             btnXuatExcel.UseVisualStyleBackColor = false;
@@ -2454,18 +2445,18 @@
             btnNhapExcel.ImageAlign = ContentAlignment.MiddleLeft;
             btnNhapExcel.Location = new Point(337, 588);
             btnNhapExcel.Name = "btnNhapExcel";
-            btnNhapExcel.Size = new Size(100, 45);
+            btnNhapExcel.Size = new Size(101, 45);
             btnNhapExcel.TabIndex = 74;
             btnNhapExcel.Text = "Nhập Excel";
             btnNhapExcel.UseVisualStyleBackColor = false;
             // 
-            // cboMaKH
+            // cboNguoiDung
             // 
-            cboMaKH.FormattingEnabled = true;
-            cboMaKH.Location = new Point(160, 504);
-            cboMaKH.Name = "cboMaKH";
-            cboMaKH.Size = new Size(252, 28);
-            cboMaKH.TabIndex = 75;
+            cboNguoiDung.FormattingEnabled = true;
+            cboNguoiDung.Location = new Point(160, 504);
+            cboNguoiDung.Name = "cboNguoiDung";
+            cboNguoiDung.Size = new Size(252, 28);
+            cboNguoiDung.TabIndex = 75;
             // 
             // cboMaHang
             // 
@@ -2475,14 +2466,35 @@
             cboMaHang.Size = new Size(252, 28);
             cboMaHang.TabIndex = 75;
             // 
+            // dtp_ngayXuat
+            // 
+            dtp_ngayXuat.CustomFormat = "MM/dd/yyyy";
+            dtp_ngayXuat.Format = DateTimePickerFormat.Custom;
+            dtp_ngayXuat.Location = new Point(539, 504);
+            dtp_ngayXuat.Margin = new Padding(3, 4, 3, 4);
+            dtp_ngayXuat.Name = "dtp_ngayXuat";
+            dtp_ngayXuat.Size = new Size(250, 27);
+            dtp_ngayXuat.TabIndex = 76;
+            // 
+            // cbo_maPX
+            // 
+            cbo_maPX.FormattingEnabled = true;
+            cbo_maPX.Location = new Point(160, 461);
+            cbo_maPX.Name = "cbo_maPX";
+            cbo_maPX.Size = new Size(252, 28);
+            cbo_maPX.TabIndex = 77;
+            cbo_maPX.SelectedIndexChanged += cbo_maPX_SelectedIndexChanged;
+            // 
             // frmPhieuXuat
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
-            ClientSize = new Size(820, 660);
+            ClientSize = new Size(821, 660);
+            Controls.Add(cbo_maPX);
+            Controls.Add(dtp_ngayXuat);
             Controls.Add(cboMaHang);
-            Controls.Add(cboMaKH);
+            Controls.Add(cboNguoiDung);
             Controls.Add(btnXuatExcel);
             Controls.Add(btnNhapExcel);
             Controls.Add(ptb_timPX);
@@ -2498,17 +2510,16 @@
             Controls.Add(btn_themPX);
             Controls.Add(label8);
             Controls.Add(label7);
-            Controls.Add(txt_ngayXuat);
             Controls.Add(label6);
             Controls.Add(txt_soLuong);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(lbl_mpx);
-            Controls.Add(txt_mPX);
             FormBorderStyle = FormBorderStyle.None;
             Name = "frmPhieuXuat";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "PhieuXuattt";
+            Load += frmPhieuXuat_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             panel11.ResumeLayout(false);
             panel12.ResumeLayout(false);
@@ -2578,14 +2589,12 @@
         #endregion
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Timer menuTransition;
-        private TextBox txt_mPX;
         private Label lbl_mpx;
         private Label label4;
         private Label label5;
         private Label label6;
         private TextBox txt_soLuong;
         private Label label7;
-        private TextBox txt_ngayXuat;
         private Button btn_lammoiPX;
         private Button btn_xoaPX;
         private Button btn_capnhatPX;
@@ -2765,7 +2774,9 @@
         private DataGridView dv_PX;
         private Button btnXuatExcel;
         private Button btnNhapExcel;
-        private ComboBox cboMaKH;
+        private ComboBox cboNguoiDung;
         private ComboBox cboMaHang;
+        private DateTimePicker dtp_ngayXuat;
+        private ComboBox cbo_maPX;
     }
 }

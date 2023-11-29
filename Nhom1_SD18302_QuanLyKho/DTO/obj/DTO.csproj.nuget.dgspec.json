@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {}
+    "D:\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {}
   },
   "projects": {
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+    "D:\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
+        "projectUniqueName": "D:\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\obj\\",
+        "projectPath": "D:\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
