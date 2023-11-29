@@ -422,10 +422,10 @@
             label54 = new Label();
             dv_NCC = new DataGridView();
             richTextBox1 = new RichTextBox();
-            cboMaNCC = new ComboBox();
             cboMaND = new ComboBox();
             btnNhapExcel = new Button();
             btnXuatExcel = new Button();
+            txtMaNCC = new TextBox();
             panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             flowLayoutPanel2.SuspendLayout();
@@ -5009,6 +5009,7 @@
             btn_lammoiNCC.Text = "Làm mới";
             btn_lammoiNCC.TextAlign = ContentAlignment.MiddleRight;
             btn_lammoiNCC.UseVisualStyleBackColor = false;
+            btn_lammoiNCC.Click += btn_lammoiNCC_Click;
             // 
             // btn_xoaNCC
             // 
@@ -5025,6 +5026,7 @@
             btn_xoaNCC.Text = "Xóa";
             btn_xoaNCC.TextAlign = ContentAlignment.MiddleRight;
             btn_xoaNCC.UseVisualStyleBackColor = false;
+            btn_xoaNCC.Click += btn_xoaNCC_Click;
             // 
             // btn_capnhatNcc
             // 
@@ -5040,6 +5042,7 @@
             btn_capnhatNcc.Text = "Cập nhập";
             btn_capnhatNcc.TextAlign = ContentAlignment.MiddleRight;
             btn_capnhatNcc.UseVisualStyleBackColor = false;
+            btn_capnhatNcc.Click += btn_capnhatNcc_Click;
             // 
             // btn_themncc
             // 
@@ -5056,6 +5059,7 @@
             btn_themncc.Text = "Thêm";
             btn_themncc.TextAlign = ContentAlignment.MiddleRight;
             btn_themncc.UseVisualStyleBackColor = false;
+            btn_themncc.Click += btn_themncc_Click;
             // 
             // label49
             // 
@@ -5153,6 +5157,7 @@
             ptb_timNCC.Size = new Size(30, 30);
             ptb_timNCC.TabIndex = 70;
             ptb_timNCC.TabStop = false;
+            ptb_timNCC.Click += ptb_timNCC_Click;
             // 
             // txt_timNCC
             // 
@@ -5166,10 +5171,12 @@
             // 
             comboBox5.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox5.FormattingEnabled = true;
+            comboBox5.Items.AddRange(new object[] { "A - Z", "Z - A" });
             comboBox5.Location = new Point(12, 69);
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new Size(150, 28);
             comboBox5.TabIndex = 68;
+            comboBox5.SelectedIndexChanged += comboBox5_SelectedIndexChanged;
             // 
             // pictureBox36
             // 
@@ -5196,6 +5203,7 @@
             // 
             // dv_NCC
             // 
+            dv_NCC.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dv_NCC.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dv_NCC.Location = new Point(12, 105);
             dv_NCC.Name = "dv_NCC";
@@ -5204,6 +5212,7 @@
             dv_NCC.Size = new Size(796, 318);
             dv_NCC.TabIndex = 65;
             dv_NCC.CellContentClick += dv_PX_CellContentClick;
+            dv_NCC.Click += dv_NCC_Click;
             // 
             // richTextBox1
             // 
@@ -5212,14 +5221,6 @@
             richTextBox1.Size = new Size(229, 78);
             richTextBox1.TabIndex = 71;
             richTextBox1.Text = "";
-            // 
-            // cboMaNCC
-            // 
-            cboMaNCC.FormattingEnabled = true;
-            cboMaNCC.Location = new Point(171, 459);
-            cboMaNCC.Name = "cboMaNCC";
-            cboMaNCC.Size = new Size(229, 28);
-            cboMaNCC.TabIndex = 72;
             // 
             // cboMaND
             // 
@@ -5241,6 +5242,7 @@
             btnNhapExcel.TabIndex = 49;
             btnNhapExcel.Text = "Nhập Excel";
             btnNhapExcel.UseVisualStyleBackColor = false;
+            btnNhapExcel.Click += btnNhapExcel_Click;
             // 
             // btnXuatExcel
             // 
@@ -5254,6 +5256,14 @@
             btnXuatExcel.TabIndex = 49;
             btnXuatExcel.Text = "Xuất Excel";
             btnXuatExcel.UseVisualStyleBackColor = false;
+            btnXuatExcel.Click += btnXuatExcel_Click;
+            // 
+            // txtMaNCC
+            // 
+            txtMaNCC.Location = new Point(171, 463);
+            txtMaNCC.Name = "txtMaNCC";
+            txtMaNCC.Size = new Size(229, 27);
+            txtMaNCC.TabIndex = 73;
             // 
             // frmNhaCungCap
             // 
@@ -5261,8 +5271,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.AppWorkspace;
             ClientSize = new Size(820, 660);
+            Controls.Add(txtMaNCC);
             Controls.Add(cboMaND);
-            Controls.Add(cboMaNCC);
             Controls.Add(richTextBox1);
             Controls.Add(ptb_timNCC);
             Controls.Add(txt_timNCC);
@@ -5840,9 +5850,9 @@
         private Label label54;
         private DataGridView dv_NCC;
         private RichTextBox richTextBox1;
-        private ComboBox cboMaNCC;
         private ComboBox cboMaND;
         private Button btnNhapExcel;
         private Button btnXuatExcel;
+        private TextBox txtMaNCC;
     }
 }

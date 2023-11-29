@@ -1,26 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {}
+    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {}
   },
   "projects": {
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj": {
+    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj",
+        "projectUniqueName": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj",
         "projectName": "BUS",
-        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj",
-        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\obj\\",
+        "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -28,11 +30,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj"
+              "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj"
               },
-              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
+              "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
               }
             }
           }
@@ -68,27 +70,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
+    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\obj\\",
+        "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -96,8 +100,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
+              "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
               }
             }
           }
@@ -133,27 +137,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
+        "projectUniqueName": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\obj\\",
+        "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -188,27 +194,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {
+    "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
+        "projectUniqueName": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
         "projectName": "Nhom1_SD18302_QuanLyKho",
-        "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
-        "packagesPath": "C:\\Users\\haiva\\.nuget\\packages\\",
-        "outputPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\obj\\",
+        "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\haiva\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 19.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 19.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -216,14 +224,14 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj": {
-                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj"
+              "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj": {
+                "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\BUS\\BUS.csproj"
               },
-              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
-                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj"
+              "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DAL\\DAL.csproj"
               },
-              "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\FPoly\\Du_an_1\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
+              "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj": {
+                "projectPath": "D:\\DuAn1_QuanLyKho\\Nhom1_SD18302_QuanLyKho\\DTO\\DTO.csproj"
               }
             }
           }
@@ -237,6 +245,12 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -256,7 +270,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -611,7 +611,7 @@
             ClientSize = new Size(1000, 700);
             Controls.Add(pnSidebar);
             Controls.Add(pnMenu);
-            ForeColor = Color.White;
+            ForeColor = Color.Black;
             FormBorderStyle = FormBorderStyle.None;
             IsMdiContainer = true;
             Name = "frmMain";
